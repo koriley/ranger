@@ -42,6 +42,7 @@
 }
 $modelContainerColor:#1E1E1E;
 $modelTitleColor:#8a8a8a;
+$borderColor: #292929;
 .tabContentContainer{
   background:$modelContainerColor;
   padding:25px;
@@ -65,7 +66,7 @@ $modelTitleColor:#8a8a8a;
     text-transform: uppercase;
     
   }
-  p{
+  .small{
     font-family: $secondSiteFont;
     font-size:15px;
     line-height:25px;
@@ -98,4 +99,48 @@ table {
             }
         }
     }
+}
+
+// accordian
+
+.accordian{
+  li{
+    padding:20px;
+    margin:0px;
+    border-top:1px solid $borderColor;
+    border-bottom:1px solid $borderColor;
+    &:first-child{
+      border-top:0px;
+    }
+    a{
+      
+      height:21px;
+      color:$firstFontColor;
+      font-family: $mainSiteFont;
+      font-size:16px;
+      font-weight:600;
+      line-height:21px;
+      text-transform: uppercase;
+      padding:0px;
+      margin:0px;
+      
+      
+      &::after{
+        border-color:$firstFontColor transparent;
+      }
+    }
+    ul{
+      list-style: none;
+      padding:20px;
+      
+      li{
+        font-family: $secondSiteFont;
+        color:$secondFontColor;
+        font-size:14px;
+        padding:0px;
+        border:0px;
+      
+      }
+    }
+  }
 }
