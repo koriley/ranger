@@ -1,0 +1,100 @@
+@import 'rangerThemeVars';
+
+.segmentSelector {
+    position: relative;
+    z-index: 200;
+    margin-top: -25px;
+    color: white;
+    font-family: $mainSiteFont;
+    // text-align: center;
+    // border:1px solid red;
+    .columns {
+        padding: 0;
+        position: relative;
+
+        .allVisible {
+            filter:grayscale(0%);
+
+            .darken {
+                background: rgba(0,0,0,.3);
+            }
+        }
+    }
+
+    .main {
+        margin-top: -65px;
+        height: 500px;
+        filter: grayscale(100%);
+        padding: 0;
+        background-color: black;
+        // border:1px solid green;
+        &:hover {
+            filter:grayscale(0%);
+
+            .darken {
+                background: rgba(0,0,0,.3);
+            }
+        }
+
+        .darken {
+            background: rgba(0,0,0,.6);
+            width: 100%;
+            height: inherit;
+
+            &:hover {
+                // background: rgba(0,0,0,.3);
+                // color:black
+            }
+        }
+    }
+
+    .textLayer {
+        // padding:25px;
+        height: inherit;
+        width: 100%;
+        position: absolute;
+        //  border: 1px solid red;
+        top: -25px;
+
+        &:hover {}
+
+        h1 {
+            padding: 25px 0 0 25px;
+            font-size: 31px;
+            font-weight: 600;
+            line-height: 42px;
+            height: inherit;
+            // width: 100%;
+            font-style: normal;
+            font-family: $mainSiteFont;
+            display: inline-block;
+            // border:1px solid red;
+            text-shadow: 1px 1px 4px black;
+
+            &:hover {}
+        }
+
+        h4 {
+            font-family: $mainSiteFont;
+            color: $secondFontColor;
+            font-size: 16px;
+            line-height: 21px;
+            font-style: normal;
+            text-shadow: 1px 1px 0.2px black;
+            margin-left: 25px;
+            margin-top: -10px;
+            text-transform: capitalize;
+        }
+
+        .arrow {
+            display: inline-block;
+            vertical-align: middle;
+            // border:1px solid blue;
+            img {
+                vertical-align: middle;
+                margin-bottom: 20%;
+                margin-left: -35%;
+            }
+        }
+    }
+}

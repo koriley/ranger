@@ -1,0 +1,184 @@
+@import url( 'https://fonts.googleapis.com/css?family=Lato|Oswald');
+@import 'settings';
+@import 'util/mixins';
+@import 'rangerThemeVars';
+//included component css files
+//heroSlide
+@import 'heroSlide';
+//segmentHero
+@import 'segmentHero';
+//rangerNavagation
+@import 'header';
+//segmentSelector
+@import 'segmentSelector';
+//swoopToAction
+@import 'swoopToAction';
+//homepageMason
+@import 'homepageMason';
+//news carousel
+@import 'newsCarousel';
+//the 3 layer bmt homepage float
+@import '3layerInfo';
+//footer style
+@import 'footer';
+
+//segmentPages
+//videoTabControles
+@import 'segmentVideoGallery';
+//allmodels tabs
+@import 'segmentAllModels';
+
+//modelPages
+@import 'modelSlide';
+@import 'modelTabs';
+
+//owl carousel includes
+@import "owl.carousel";
+@import 'owl.theme.default';
+
+.mainSiteColor {
+    background: $mainColor;
+}
+
+.secondSiteColor {
+    background: $secondColor;
+}
+
+.thirdSiteColor {
+    background: $thirdColor;
+}
+
+.firstAccentColor {
+    background: $firstAccentColor;
+}
+
+.secondAccentColor {
+    background: $secondAccentColor;
+}
+
+.firstFontColor {
+    color: $firstFontColor;
+}
+
+.secondFontColor {
+    color: $secondFontColor;
+}
+
+.mainFont {
+    font-family: $mainSiteFont;
+}
+
+.secondFont {
+    font-family: $secondSiteFont;
+}
+
+.mainSiteWidth {
+    max-width: $mainSiteWidth;
+}
+
+.largeBreakpoint {
+    max-width: #{map-get($breakpoints, large)};
+}
+
+.mediumBreakpoint {
+    max-width: #{map-get($breakpoints, medium)};
+}
+
+.smallBreakpoint {
+    max-width: #{map-get($breakpoints, small)};
+}
+
+* {
+    // font-family: $rangerFont !important;
+}
+
+body {
+    // background: $mainColor;
+    // font-family: $rangerFont;
+    // color: $firstFontColor;
+    //max-width: $mainSiteWidth;
+    // border: 1px solid red;
+    background: $mainColor;
+}
+
+.siteContainer {
+    max-width: $mainSiteWidth;
+    // border: 1px solid red;
+    margin: auto !important;
+    background: $thirdColor;
+    overflow: hidden;
+}
+
+.ctaButton {
+    height: 45px;
+    width: 138px;
+    background-color: $firstAccentColor;
+    border: 1px solid $firstAccentColor;
+    margin: 15px;
+    color: $firstFontColor;
+    font-family: $mainSiteFont;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: left;
+    background-image: url('/assets/img/white-arrow-button.svg');
+    background-repeat: no-repeat;
+    background-position: 85%;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &:visited {
+        background-color: $firstAccentColor;
+    }
+}
+
+.tabs-content{
+  border:0px solid red;
+  background:none;
+  color:$firstFontColor;
+}
+
+hr {
+    width: 50px;
+    height: 6px;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    background: red;
+    border: 0;
+    float: left;
+    //  margin-bottom: 45px;
+}
+
+.noPad {
+    padding: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: $mainSiteFont;
+}
+
+h1 {
+    // height: 91px;
+    // width: 503px;
+    color: $firstFontColor;
+    font-size: 67px;
+    font-weight: 600;
+    line-height: 91px;
+}
+
+h2 {
+    // height: 32px;
+    // width: 212px;
+    color: $firstFontColor;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 0;
+}

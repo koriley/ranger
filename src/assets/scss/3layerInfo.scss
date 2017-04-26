@@ -1,0 +1,55 @@
+.threeLayerTextBlock {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+
+    hr {
+        margin: auto;
+        float: none;
+    }
+
+    h1 {
+        font-size: 31px;
+        font-weight: 600;
+        line-height: 42px;
+        font-style: normal;
+        font-family: $mainSiteFont;
+        padding: 10px;
+    }
+
+    h4 {
+        font-family: $secondSiteFont;
+        color: $secondFontColor;
+        font-size: 16px;
+        line-height: 21px;
+        font-style: normal;
+        text-shadow: 1px 1px 0.2px black;
+        // margin-left: 25px;
+        margin-top: 22px;
+        // width: 100%;
+        text-transform: capitalize;
+        padding: 10px;
+    }
+}
+
+.bmtBackground {
+    // overflow: hidden;
+    position: relative;
+    height: 600px;
+    max-height: 600px;
+    @include breakpoint(medium only) {
+      height:430px;
+    }
+    @include breakpoint(small only) {
+      height:230px;
+    }
+
+    
+
+    .layerThree {
+        color: white;
+        position: absolute;
+        z-index: 2000;
+        bottom: 0;
+    }
+}

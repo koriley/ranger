@@ -1,0 +1,101 @@
+.modelTabControls{
+  text-align: center;
+
+  .tabs {
+      background: transparent !important;
+      border: 0 solid red;
+      margin: auto;
+      text-align: center;
+      display: inline-block;
+
+      .tabs-title {
+          border: 0 solid blue;
+
+          a {
+              border: 0 solid green;
+              margin: 0 20px;
+              font-family: $mainSiteFont;
+              font-size: 25px;
+              font-weight: 600;
+              line-height: 20px;
+              color: $firstFontColor;
+              text-transform: uppercase;
+
+              &[aria-selected='true'] {
+                  background: transparent;
+                  border-bottom: 5px solid $firstAccentColor;
+              }
+
+              &:hover &:active &:focus {
+                  border: 0;
+                  background: transparent;
+              }
+
+              &:hover {
+                  background: transparent;
+                  border-bottom: 5px solid $firstAccentColor;
+              }
+          }
+      }
+  }
+
+}
+$modelContainerColor:#1E1E1E;
+$modelTitleColor:#8a8a8a;
+.tabContentContainer{
+  background:$modelContainerColor;
+  padding:25px;
+  h1{
+    height:21px;
+    color:$firstFontColor;
+    font-family: $mainSiteFont;
+    font-size:25px;
+    font-weight:600px;
+    line-height:34px;
+    text-transform: uppercase;
+    padding-bottom:65px;
+  }
+  h2{
+    height:21px;
+    color:$firstFontColor;
+    font-family: $mainSiteFont;
+    font-size:16px;
+    font-weight:600px;
+    line-height:21px;
+    text-transform: uppercase;
+    
+  }
+  p{
+    font-family: $secondSiteFont;
+    font-size:15px;
+    line-height:25px;
+    color: $secondFontColor;
+  }
+  
+}
+table {
+    tbody {
+        border: 0;
+        background-color: transparent;
+        border: 0;
+        
+        tr {
+            border: 0;
+
+            &:nth-child(even) {
+                background-color: $secondColor;
+            }
+
+            td {
+                
+                span{
+                font-family: $secondSiteFont;
+                color:$secondFontColor;
+                font-size:14px;
+                line-height:40px;
+                text-transform: capitalize;
+              }
+            }
+        }
+    }
+}

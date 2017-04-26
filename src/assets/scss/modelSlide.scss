@@ -1,0 +1,46 @@
+.slideBackground {
+    max-height: 800px;
+    position: relative;
+
+    .modelCarousel {
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+        padding-top: 25%;
+
+        img {}
+    }
+}
+
+.modelController {
+    // border: 1px solid white;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 200px;
+
+    .modelPrev {
+        color: white;
+        cursor: pointer;
+        width: 53px;
+        height: 53px;
+        background: url('/assets/img/white-arrow-button.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50%;
+        float: right;
+    }
+
+    .modelNext {
+        color: white;
+        cursor: pointer;
+        width: 53px;
+        height: 53px;
+        background: url('/assets/img/white-arrow-button.svg');
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50%;
+        float: left;
+    }
+}

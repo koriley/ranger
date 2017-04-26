@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="25px" viewBox="0 0 62 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-7.5%" y="-11.9%" width="115.0%" height="136.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="33" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.260303442 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Navigation---Boats-Saltwater" transform="translate(-873.000000, -953.000000)" fill="#E51B23">
+            <g id="Group-9" filter="url(#filter-1)" transform="translate(111.000000, 906.000000)">
+                <g id="M19Skiff_LS133_17-Copy-2" transform="translate(609.000000, 0.000000)">
+                    <g id="Group-6" transform="translate(40.000000, 40.000000)">
+                        <g id="arrow" transform="translate(150.000000, 13.000000)">
+                            <path d="M14.98625,7.37174078 C14.985,7.36486566 14.98125,7.35861555 14.98,7.35111542 C14.971875,7.31673982 14.961875,7.28361423 14.948125,7.25236368 C14.943125,7.23986346 14.935625,7.22986329 14.929375,7.21798808 C14.916875,7.19298764 14.903125,7.16736219 14.8875,7.14361177 C14.8775,7.12986153 14.86625,7.11861133 14.855625,7.1054861 C14.84,7.08611076 14.82375,7.06673542 14.80625,7.04923511 C14.8025,7.04673507 14.8,7.04235999 14.796875,7.03923493 L7.296875,0.164113969 C7.0425,-0.0690151329 6.646875,-0.051514825 6.41375,0.20223964 C6.180625,0.457244126 6.198125,0.852251076 6.4525,1.08538018 L12.7675,6.87485704 L0.625,6.87485704 C0.279375,6.87485704 0,7.15486197 0,7.49986804 C0,7.84549912 0.279375,8.12487904 0.625,8.12487904 L12.7675,8.12487904 L6.4525,13.9143559 C6.198125,14.14811 6.180625,14.543117 6.41375,14.7974964 C6.5375,14.9324988 6.705625,15 6.875,15 C7.02625,15 7.176875,14.945624 7.296875,14.8356221 L14.796875,7.96050114 C14.8,7.95737609 14.8025,7.95425103 14.80625,7.95050097 C14.824375,7.93300066 14.84,7.91362532 14.85625,7.89424998 C14.866875,7.88174976 14.8775,7.86987455 14.8875,7.85612431 C14.903125,7.83237389 14.916875,7.80737345 14.929375,7.781748 C14.935625,7.7704978 14.943125,7.75987261 14.948125,7.74862242 C14.961875,7.71674685 14.971875,7.68237125 14.98,7.64799564 C14.98125,7.64174553 14.985,7.63549542 14.98625,7.62799529 C14.995,7.58674457 15,7.54361881 15,7.49986804 C15,7.45611727 14.995,7.41299151 14.98625,7.37174078" id="Fill-459"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

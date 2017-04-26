@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="880px" height="518px" viewBox="0 0 880 518" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="290 0 -780 0 -780 815 0 815"></polygon>
+    </defs>
+    <g id="Segment-Page" stroke="none" stroke-width="1" fill="#252525" fill-rule="evenodd">
+        <g id="Segment---Fiberglass" transform="translate(-560.000000, -846.000000)">
+            <g id="R621FS_LS063_17" transform="translate(560.000000, 846.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#252525"  xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
