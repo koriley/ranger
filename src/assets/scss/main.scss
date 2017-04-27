@@ -104,6 +104,22 @@ body {
     background: $mainColor;
 }
 
+.tabs-title > a{
+  color:$firstFontColor;
+  &:hover, &:active, &:visited, &:focus{
+    color:$firstFontColor;
+    border:0px;
+    background:transparent;
+    outline:none;
+  }
+  &[aria-selected='true'], &:focus {
+    color:$firstFontColor;
+    border:0px;
+    background:transparent;
+  }
+}
+
+
 .siteContainer {
     max-width: $mainSiteWidth;
     // border: 1px solid red;
