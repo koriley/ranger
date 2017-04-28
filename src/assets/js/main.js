@@ -10,7 +10,8 @@ require([
     'segmentSelector',
     'newsCarousel',
     'segmentAllModels',
-    'modelPage'
+    'modelPage',
+    'catalogForm'
 ], function(app, header, heroSlide) {
     //since these components don't need to be told to run, there is no callback function defined.
 

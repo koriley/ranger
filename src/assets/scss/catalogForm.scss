@@ -1,0 +1,103 @@
+.catalogForm {
+    color: $firstFontColor;
+.dek{
+  margin-top:25px;
+  font-family: $secondSiteFont;
+  color:$secondFontColor;
+  font-size:15px;
+  line-height:25px;
+}
+    label {
+        color: inherit;
+    }
+    // input, textarea {
+    //   border:0px;
+    //   background-color:transparent;
+    //   color:$firstFontColor; 
+    //   &:focus{
+    //     border:0px;
+    //     background-color:transparent;
+    //     outline:none;
+    //     box-shadow: none;
+    //   }
+    //  
+    // }
+    .inputGroup{
+      // border:1px solid blue;
+    }
+    label {
+        display: block;
+        height: 60px;
+        overflow: auto;
+        position: relative;
+        display: inline-block;
+        width:45%;
+        // border:1px solid red;
+        input {
+            position: absolute;
+            bottom:0px;
+            padding-left:15px;
+            border: 0;
+            border-bottom: 1px solid $secondFontColor;
+            background-color: transparent;
+            color: $secondFontColor;
+            width:100%;
+            font-family:$mainSiteFont;
+            text-transform: uppercase;
+            font-size:14px;
+            line-height:19px;
+            display:inline-block;
+            &:focus {
+                border: 0;
+                border-bottom: 1px solid $secondFontColor;
+                background-color: transparent;
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        input ~ span {
+            color:$secondFontColor;
+            // transition: top 1s ease;
+            position: absolute;
+            font-family:$mainSiteFont;
+            text-transform: uppercase;
+            font-size:14px;
+            line-height:19px;
+            //top: 20px;
+        }
+        
+        input:focus ~ span {
+          //  top: 0;
+        }
+    }
+}
+/* Place Holder CSS for Focus */
+// :focus::-webkit-input-placeholder {
+//   opacity: 0;
+//   -webkit-transition: opacity 0.35s ease-in-out;
+//   transition: opacity 0.35s ease-in-out;
+//   background-color:transparent;
+//   outline:none;
+// }
+// :focus:-moz-placeholder {
+//   opacity: 0;
+//   -moz-transition: opacity 0.35s ease-in-out;
+//   transition: opacity 0.35s ease-in-out;
+//   background-color:transparent;
+//   outline:none;
+// }
+// :focus::-moz-placeholder {
+//   opacity: 0;
+//   -moz-transition: opacity 0.35s ease-in-out;
+//   transition: opacity 0.35s ease-in-out;
+//   background-color:transparent;
+//   outline:none;
+// }
+// :focus:-ms-input-placeholder {  
+//   opacity: 0;
+//   -ms-transition: opacity 0.35s ease-in-out;
+//   transition: opacity 0.35s ease-in-out;
+//   background-color:transparent;
+//   outline:none;
+// }
