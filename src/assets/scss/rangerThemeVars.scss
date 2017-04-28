@@ -1,5 +1,4 @@
-@import 'settings'; 
-
+@import 'settings';
 $mainColor: #141414; //black
 $secondColor: #171717; //darkerBlack
 // $thirdColor: #252525; //lighterBlack
@@ -11,8 +10,7 @@ $secondFontColor: #8B8B8B; //grey-ish
 //color from invision #131313
 //import from google
 $mainSiteFont: 'Oswald', sans-serif;
-$secondSiteFont: 'Lato', sans-serif;
-//site width
+$secondSiteFont: 'Lato', sans-serif; //site width
 $mainSiteWidth: 1600px;
 @mixin skewMe($degree) {
     height: 518px;
@@ -29,3 +27,4 @@ $mainSiteWidth: 1600px;
         transform: skewX(-$degree);
     }
 }
+
