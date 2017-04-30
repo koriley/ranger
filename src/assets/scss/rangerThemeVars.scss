@@ -12,6 +12,7 @@ $secondFontColor: #8B8B8B; //grey-ish
 $mainSiteFont: 'Oswald', sans-serif;
 $secondSiteFont: 'Lato', sans-serif; //site width
 $mainSiteWidth: 1600px;
+$borderColor:#2f2f2f;
 @mixin skewMe($degree) {
     height: 518px;
     transform: skewX($degree);
@@ -27,4 +28,3 @@ $mainSiteWidth: 1600px;
         transform: skewX(-$degree);
     }
 }
-

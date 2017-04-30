@@ -1,29 +1,27 @@
 {{>modelPageHeader}}
 
 <div class="tabs-content" data-tabs-content="segment-tabs">
-   <div class="tabs-panel is-active" id="overview">
-       {{>modelSlide}} 
-       {{> modelTabs}}
-       {{> modelBigVideo}}
-       {{> modelMasonGrid}}
-       {{> modelCTAHero}}
-   </div>
-   <div class="tabs-panel" id="gallery">
-       <div class="row">
-           <div class="large-12 medium-12 small-12 columns">
-             {{> modelGallery}}
-           </div>
-       </div>
-   </div>
+    <div class="tabs-panel is-active" id="overview">
+        {{>modelSlide}} {{> modelTabs}} {{> modelBigVideo}} {{> modelMasonGrid}} {{> modelCTAHero}}
+    </div>
+    <div class="tabs-panel" id="gallery">
+        <div class="row">
+            <div class="large-12 medium-12 small-12 columns">
+                {{> modelGallery}}
+            </div>
+        </div>
+    </div>
 
-   <div class="tabs-panel" id="reviews">
+    <div class="tabs-panel" id="reviews">
 
-       {{> modelReviews}}
-   </div>
-   
-   <div class="tabs-panel" id="build">
+        {{> modelReviews}}
+    </div>
 
-       {{> fiberAllModelsTabHero}} {{>segmentAllModels}}
-   </div>
+    <div class="tabs-panel" id="build">
+        <div class="buildHeroText">
+            {{> buildHero}}
+        </div>
+        {{>buildBody}}
 
+    </div>
 </div>

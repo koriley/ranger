@@ -1,3 +1,6 @@
+.heroRelative{
+position:relative;
+
 .heroCarousel {
     .slide {
         width: 100%;
@@ -52,10 +55,11 @@
 }
 
 .whiteBox {
+  max-width: 1600px;
     position: absolute;
     border: 1px solid white;
     top: 55px;
-    bottom: 155px;
+    bottom: 45px;
     left: 75px;
     right: 75px;
     z-index: 10;
@@ -96,4 +100,5 @@ pointer-events: auto;
             float:right;
         }
     }
+}
 }
