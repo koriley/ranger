@@ -81,3 +81,12 @@ $videoTitleColor:#8a8a8a;
     }
   }
 }
+
+// this is for the modall on videos.
+.reveal{
+  border:0px;
+  background:$borderColor;
+  .close-button{
+    color:$firstAccentColor;
+  }
+}
