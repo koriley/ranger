@@ -14,17 +14,17 @@ $borderColor: #292929;
             line-height: 20px;
             text-transform: uppercase;
             border-bottom: 1px solid $borderColor;
-
+            &:hover {
+                color: $firstFontColor;
+                border-right: 5px solid $firstAccentColor;
+            }
             a {
                 color: $firstFontColor;
                 padding: 25px;
 
               
                 
-                &:hover {
-                    color: $firstFontColor;
-                    border-right: 5px solid $firstAccentColor;
-                }
+                
             }
 
             .active {
@@ -33,15 +33,17 @@ $borderColor: #292929;
                 //till we have a resize or you scroll down to the last collection.
                 // I am going to fake this with jQuery to highlight the clicked button.
             }
-            .fakeActive{
-              border-right: 5px solid $firstAccentColor;
-            }
+            
 
             &:nth-child(odd) {
                 background: $secondColor;
             }
         }
     }
+}
+
+.scrollActive{
+  border-right: 5px solid $firstAccentColor;
 }
 
 .boatModel {
