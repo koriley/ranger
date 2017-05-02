@@ -9,8 +9,8 @@ All pages are broken down to components, each with its own html (in partials), s
 
 The gulp file will compile the css to one file and all the js files separate. Js files are ported into the project using require.js
 
-TO COMPILE:
-one you have pulled the repo to your computer;
+TO COMPILE:<br/>
+once you have pulled the repo to your computer;
 1. run npm install
 2. run bower install
 3. run foundation watch.
