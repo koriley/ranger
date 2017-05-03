@@ -8,6 +8,7 @@ require([
     'heroSlide',
     'modelSlide',
     'segmentSelector',
+    'segmentHeader',
     'newsCarousel',
     'segmentAllModels',
     'modelPage',

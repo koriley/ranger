@@ -1,13 +1,10 @@
-jQuery('.modelTabsCheck li a').on('touchstart click', function(){
-  var iAm = jQuery(this).attr('href');
-  
-  if(!iAm){
-    return;
-  }
-  // console.log(iAm);
-  if(iAm == "#overview"){
+var model = jQuery(".modelTabsCheck");
+
+if (model.length > 0) {
+  // console.log(url.pathname);
+  if (url.pathname === "/model/overview.html") {
     jQuery('.floatingModelPriceBlock').show();
-  }else{
-      jQuery('.floatingModelPriceBlock').hide();
+  } else {
+    jQuery('.floatingModelPriceBlock').hide();
   }
-});
+}

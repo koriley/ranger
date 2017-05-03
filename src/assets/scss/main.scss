@@ -23,6 +23,8 @@
 @import 'footer';
 
 //segmentPages
+//segment header
+@import 'segmentHeader';
 //videoTabControles
 @import 'segmentVideoGallery';
 //allmodels tabs
@@ -232,6 +234,7 @@
 
 * {
     // font-family: $rangerFont !important;
+    color:$firstFontColor;
 }
 
 body {

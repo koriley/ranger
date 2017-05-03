@@ -1,107 +1,106 @@
 $borderColor: #292929;
 
 .stickyMenu {
-    // margin-top: 25px;
-    top: 0 !important;
+  // margin-top: 25px;
+  top: 0 !important;
 
-    ul {
-        list-style: none;
+  ul {
+    list-style: none;
 
-        li {
-            font-family: $mainSiteFont;
-            font-size: 15px;
-            font-weight: 600px;
-            line-height: 20px;
-            text-transform: uppercase;
-            border-bottom: 1px solid $borderColor;
-            &:hover {
-                color: $firstFontColor;
-                border-right: 5px solid $firstAccentColor;
-            }
-            a {
-                color: $firstFontColor;
-                padding: 25px;
+    li {
+      font-family: $mainSiteFont;
+      font-size: 15px;
+      font-weight: 600px;
+      line-height: 20px;
+      text-transform: uppercase;
+      border-bottom: 1px solid $borderColor;
 
-              
-                
-                
-            }
+      &:hover {
+        color: $firstFontColor;
+        border-right: 5px solid $firstAccentColor;
+      }
 
-            .active {
-                //  border-right: 5px solid $firstAccentColor;
-                //cant set active, magellan wants to set the last li as active 
-                //till we have a resize or you scroll down to the last collection.
-                // I am going to fake this with jQuery to highlight the clicked button.
-            }
-            
+      a {
+        color: $firstFontColor;
+        padding: 25px;
+      }
 
-            &:nth-child(odd) {
-                background: $secondColor;
-            }
-        }
+      .active {
+        //  border-right: 5px solid $firstAccentColor;
+        //cant set active, magellan wants to set the last li as active 
+        //till we have a resize or you scroll down to the last collection.
+        // I am going to fake this with jQuery to highlight the clicked button.
+      }
+
+      &:nth-child(odd) {
+        background: $secondColor;
+      }
     }
+  }
 }
 
-.scrollActive{
+.scrollActive {
   border-right: 5px solid $firstAccentColor;
 }
 
 .boatModel {
-    h1 {
-        font-family: $mainSiteFont;
-        font-size: 31px;
-        line-height: 42px;
-    }
+  color:$firstFontColor;
+  font-family:$mainSiteFont;
+  h1 {
+    font-family: $mainSiteFont;
+    font-size: 31px;
+    line-height: 42px;
+  }
 
-    h4 {
-        font-family: $mainSiteFont;
-        font-size: 16px;
-        line-height: 21px;
-        font-style: italic;
-        color: $secondFontColor;
-    }
+  h4 {
+    font-family: $mainSiteFont;
+    font-size: 16px;
+    line-height: 21px;
+    font-style: italic;
+    color: $secondFontColor;
+  }
 
-    table {
-        tbody {
-            border: 0;
-            background-color: transparent;
-            border: 0;
+  table {
+    tbody {
+      border: 0;
+      background-color: transparent;
+      border: 0;
 
-            tr {
-                border: 0;
+      tr {
+        border: 0;
 
-                &:nth-child(even) {
-                    background-color: $secondColor;
-                }
-
-                td {
-                    border: 0;
-                }
-            }
-        }
-    }
-
-    .border {
-        border-top: 1px solid $borderColor;
-        margin: 10px 0 0;
-        padding-top: 15px;
-    }
-
-    .modelLinkContainer {
-        border-top: 1px solid $borderColor;
-        border-bottom: 1px solid $borderColor;
-        padding: 25px;
-        margin: 15px 0;
-
-        .byoLink {
-            display: inline-block;
-            padding: 0 20px;
+        &:nth-child(even) {
+          background-color: $secondColor;
         }
 
-        .vtmLink {
-            color: $firstAccentColor;
-            display: inline-block;
-            padding: 0 20px;
+        td {
+          border: 0;
         }
+      }
     }
+  }
+
+  .border {
+    border-top: 1px solid $borderColor;
+    margin: 10px 0 0;
+    padding-top: 15px;
+  }
+
+  .modelLinkContainer {
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+    padding: 25px;
+    margin: 15px 0;
+
+    .byoLink {
+      display: inline-block;
+      padding: 0 20px;
+    }
+
+    .vtmLink {
+      color: $firstAccentColor;
+      display: inline-block;
+      padding: 0 20px;
+    }
+  }
 }
