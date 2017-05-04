@@ -8,6 +8,7 @@ These are the functions that make the main navagation function.
 var oldSelectedMenuItem;
 var newSelectedMenuItem;
 var selectedMenuValue = 0;
+var menuOpen = 0;
 /************************
 colorize sets the color of the selected or hoverered over element to white and changes the siblings to grey
 
@@ -35,7 +36,7 @@ tested with QUnit; test.html for results, test.js to see test
 @parm -> element of a menu item
 ***********************/
 function resetMenu(element) {
-  jQuery(element).each(function () {
+  jQuery(element).each(function() {
     jQuery(this).siblings().stop().animate({
       color: "white"
     }, 300);
@@ -51,13 +52,13 @@ function resetMenu(element) {
 /************************
   these are the nav mouse enter and leave state anonymous functions
 ************************/
-jQuery(".mainNav").mouseenter(function () {
-  
+jQuery(".mainNav").mouseenter(function() {
+
   if (selectedMenuValue == 0) {
     colorize(this);
   }
 });
-jQuery(".mainNav").mouseleave(function () {
+jQuery(".mainNav").mouseleave(function() {
   if (selectedMenuValue == 0) {
     resetMenu(this);
   }
@@ -66,7 +67,7 @@ jQuery(".mainNav").mouseleave(function () {
 /***********************
 This is the click state for the main nav
 ***********************/
-jQuery(".dropNav").on("click touchstart", function () {
+jQuery(".dropNav").on("click touchstart", function(event) {
 
   /**************
   Get the main menu item clicked index number. Used to know the the menu is active.
@@ -79,15 +80,15 @@ jQuery(".dropNav").on("click touchstart", function () {
   item clicked for testing.
   *******************/
   // console.log(selectedMenuValue);
-  if(selectedMenuValue == 1){
+  if (selectedMenuValue == 1) {
     jQuery(".selectorDrop").children().hide();
-    jQuery(".selectorDrop").show().find(".segments").show();
+    jQuery(".selectorDrop").find(".segments").show();
   }
-  if(selectedMenuValue == 4){
+  if (selectedMenuValue == 4) {
     jQuery(".selectorDrop").children().hide();
-    jQuery(".selectorDrop").show().find(".owners").show();
+    jQuery(".selectorDrop").find(".owners").show();
   }
-  
+
   //jQuery(".selectorDrop").html(jQuery(this).attr("data-name"));
   /*******************
   This is setting up the vars to juggle which item is in an active state.
@@ -130,5 +131,19 @@ jQuery(".dropNav").on("click touchstart", function () {
   /*******************
   Show dropdown menu finally if all states checkout.
   *******************/
+  //set the menu var to open
   jQuery('.selectorDrop').slideFadeToggle();
+   menuOpen = 1;
+event.stopPropagation();
+  
+  
+});
+
+//close the menu if you click anywhere else on the page and the menu is open.
+jQuery("html").not('.dropNav').on("touchstart click", function() {
+  if (menuOpen == 1) {
+    
+    jQuery('.selectorDrop').slideFadeToggle();
+    menuOpen = 0;
+  }
 });
