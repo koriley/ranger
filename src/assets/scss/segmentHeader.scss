@@ -1,0 +1,108 @@
+.segments {
+  padding: 0;
+  margin: auto;
+
+  .glass {
+    height: 73px;
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    color: $firstFontColor;
+    font-family: $mainSiteFont;
+    padding-left: 25px;
+    position: absolute;
+    top: 109px;
+    left: 0;
+    z-index: 500;
+
+    .breadCrumb {
+      float: left;
+
+      .currentLocation {
+        h1 {
+          font-size: 26px;
+          line-height: 35px;
+          display: inline-block;
+        }
+
+        .dropNav div::after {
+          @include css-triangle(10px, $firstAccentColor, "down");
+          display: inline-block;
+          margin-left: 5px;
+          margin-bottom: 2px;
+        }
+      }
+
+      h4 {
+        height: 17px;
+        font-family: "open sans";
+        font-size: 12px;
+        line-height: 17px;
+        // padding: 5px 5px;
+        display: inline-block;
+
+        &::after {
+          content: ">";
+          padding: 5px 10px;
+        }
+      }
+    }
+
+    .tabsController {
+      float: right;
+
+      .pages {
+        background: none;
+        border: 0;
+        margin: 0;
+        list-style-type: none;
+
+        &::before {
+          display: table;
+          content: ' ';
+          box-sizing: inherit;
+        }
+
+        &::after {
+          clear: both;
+          box-sizing: inherit;
+        }
+
+        .pageTitle {
+          margin-top: -2px;
+          text-transform: uppercase;
+          float: left;
+          display: inline-block;
+
+          a {
+            &[aria-selected='true'] {
+              background: rgba(0,0,0,.5);
+            }
+            color: $firstFontColor;
+            padding: 28px;
+            font-family: $mainSiteFont;
+            font-size: 14px;
+            line-height: 19px;
+            display: block;
+
+            &:hover &:active &:focus {
+              border: 0;
+            }
+
+            &:hover {
+              background: rgba(0,0,0,.3) !important;
+              // border: 1px solid blue;
+            }
+
+            &:focus {
+              border: 0;
+              background: transparent;
+              outline: none;
+            }
+          }
+
+          li {}
+        }
+      }
+    }
+  }
+}
