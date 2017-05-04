@@ -1,184 +1,186 @@
 @import 'rangerThemeVars';
 
-.navContainer {
+.navOutterContainer {
+  position: relative;
+
+  .navInnerContainer {
     position: absolute;
     z-index: 500;
     width: 100%;
     top: 0;
     font-family: $mainSiteFont;
-    
 
     .selectorDrop {
-        position: relative;
-        // top: -8px;
-        z-index: 1;
-        background: $secondColor;
-        width:100%;
-        border-bottom: 6px solid $firstAccentColor;
+      position: relative;
+      // top: -8px;
+      z-index: 1;
+      background: $secondColor;
+      width: 100%;
+      border-bottom: 6px solid $firstAccentColor;
 
-        .columns {
-            padding: 0;
-        }
+      .columns {
+        padding: 0;
+      }
     }
 
     .nav {
-        background: $mainColor;
-        padding: 0;
+      background: $mainColor;
+      padding: 0;
 
-        .logo {
-            height: 108px;
-            background: $secondColor;
-            padding: 5px;
+      .logo {
+        height: 108px;
+        background: $secondColor;
+        padding: 5px;
+      }
+
+      .top {
+        background: $thirdColor;
+        height: 41px;
+        //width:100%;
+        .button {
+          background: $firstAccentColor;
+          text-transform: uppercase;
+          margin-right: -15px;
+          height: 41px;
+          @include button-dropdown(4px, white, "down");
         }
 
-        .top {
-            background: $thirdColor;
+        .button div::after {
+          @include button-dropdown(4px, white, "down");
+        }
+
+        .menu {
+          height: 41px;
+
+          .item {
+            color: $secondFontColor;
+            text-transform: uppercase;
+            //font-style: italic;
             height: 41px;
-            //width:100%;
-            .button {
-                background: $firstAccentColor;
-                text-transform: uppercase;
-                margin-right: -15px;
-                height: 41px;
-                @include button-dropdown(4px, white, "down");
+            //  padding: 0 15px;
+            font-size: 11px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 15px;
+
+            div {
+              border-right: 1px solid $secondFontColor;
+              padding-right: 15px;
+              padding-left: 10px;
             }
 
-            .button div::after {
-                @include button-dropdown(4px, white, "down");
+            &:last-child {
+              padding: 0;
+
+              div {
+                border: 0;
+              }
             }
-
-            .menu {
-                height: 41px;
-
-                .item {
-                    color: $secondFontColor;
-                    text-transform: uppercase;
-                    //font-style: italic;
-                    height: 41px;
-                    //  padding: 0 15px;
-                    font-size: 11px;
-                    font-weight: 600;
-                    text-align: center;
-                    line-height: 15px;
-
-                    div {
-                        border-right: 1px solid $secondFontColor;
-                        padding-right: 15px;
-                        padding-left: 10px;
-                    }
-
-                    &:last-child {
-                        padding: 0;
-
-                        div {
-                            border: 0;
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
 
-        .middle {
-            background: $secondAccentColor;
+      .middle {
+        background: $secondAccentColor;
+        height: 67px;
+
+        .menu {
+          .item {
+            text-transform: uppercase;
+            // font-style: italic;
             height: 67px;
+            padding: 0 55px;
+            border-right: 1px solid $thirdColor;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 17px;
+            color: white;
+          }
 
-            .menu {
-                .item {
-                    text-transform: uppercase;
-                    // font-style: italic;
-                    height: 67px;
-                    padding: 0 55px;
-                    border-right: 1px solid $thirdColor;
-                    font-size: 13px;
-                    font-weight: 600;
-                    line-height: 17px;
-                    color: white;
-                }
-
-                .dropNav div::after {
-                    @include css-triangle(4px, $firstAccentColor, "down");
-                    display: inline-block;
-                    margin-left: 5px;
-                    margin-bottom: 2px;
-                }
-            }
+          .dropNav div::after {
+            @include css-triangle(4px, $firstAccentColor, "down");
+            display: inline-block;
+            margin-left: 5px;
+            margin-bottom: 2px;
+          }
         }
+      }
 
-        .bottom {
-            background: $thirdColor;
-            height: 10px;
-        }
+      .bottom {
+        background: $thirdColor;
+        height: 10px;
+      }
     }
+  }
 }
 // this is segment 'glass' sub menu css
 
-
-
 .floatingModelPriceBlock {
-    float: right;
-    width: 289px;
-    height: 218px;
-    background: $mainColor;
-    position: absolute;
-    top: 182px;
-    z-index: 5;
-    right: 0;
+  float: right;
+  width: 289px;
+  height: 218px;
+  background: $mainColor;
+  position: absolute;
+  top: 182px;
+  z-index: 5;
+  right: 0;
+  color: $firstFontColor;
+  padding: 10px 15px;
+
+  h1 {
+    font-family: $mainSiteFont;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-family: $mainSiteFont;
+    font-size: 16px;
+    line-height: 21px;
+    color: $secondFontColor;
+    font-style: italic;
+    padding-bottom: 20px;
+  }
+
+  h3 {
+    font-family: $mainSiteFont;
     color: $firstFontColor;
-    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+  }
 
-    h1 {
-        font-family: $mainSiteFont;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 27px;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
+  h2 {
+    font-family: $mainSiteFont;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 15px;
+    padding: 0;
+    margin: 0;
 
-    h4 {
-        font-family: $mainSiteFont;
-        font-size: 16px;
-        line-height: 21px;
-        color: $secondFontColor;
-        font-style: italic;
-        padding-bottom: 20px;
+    span {
+      font-family: $mainSiteFont;
+      color: $firstFontColor;
+      font-size: 13px;
+      font-weight: 200;
+      line-height: 46px;
     }
+  }
 
-    h3 {
-        font-family: $mainSiteFont;
-        color: $firstFontColor;
-        font-size: 13px;
-        font-weight: 200;
-        line-height: 18px;
-        padding: 0;
-        margin: 0;
-    }
-
-    h2 {
-        font-family: $mainSiteFont;
-        font-size: 30px;
-        font-weight: 600;
-        line-height: 15px;
-        padding: 0;
-        margin: 0;
-
-        span {
-            font-family: $mainSiteFont;
-            color: $firstFontColor;
-            font-size: 13px;
-            font-weight: 200;
-            line-height: 46px;
-        }
-    }
-    .ctaButton {
-        margin: auto;
-        width: 100%;
-        text-align: center;
-        background-image: none;
-        font-size:14px;
-        text-transform: uppercase;
-        font-family: $mainSiteFont;
-        color: $firstFontColor;
-        margin-top:10px;
-    }
+  .ctaButton {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    background-image: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: $mainSiteFont;
+    color: $firstFontColor;
+    margin-top: 10px;
+  }
 }
