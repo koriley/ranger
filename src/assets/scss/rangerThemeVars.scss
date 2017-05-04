@@ -6,6 +6,14 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('/assets/fonts/oswald-regularitalic-webfont.woff2') format('woff2'),
+         url('/assets/fonts/oswald-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 $mainColor: #141414; //black
 $secondColor: #171717; //darkerBlack
 // $thirdColor: #252525; //lighterBlack

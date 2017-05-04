@@ -282,13 +282,14 @@ body {
 
 .ctaButton {
     height: 45px;
-    width: 138px;
+    padding-right: 60px;
+    //width: 138px;
     background-color: $firstAccentColor;
     border: 1px solid $firstAccentColor;
     margin: 15px;
     color: $firstFontColor;
     font-family: $mainSiteFont;
-    font-size: 17px;
+    font-size: 13px;
     font-weight: 600;
     line-height: 17px;
     text-align: left;
@@ -335,5 +336,5 @@ h5,
 h6 {
     color: $white;
     text-transform: uppercase;
-    font-family: $mainSiteFont;
+    font-family: 'oswaldregular';
 }
