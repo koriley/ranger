@@ -78,6 +78,7 @@ jQuery(".dropNav").on("click touchstart", function () {
   May be removed, this is to fill out the dropdown with the name of the
   item clicked for testing.
   *******************/
+  // console.log(selectedMenuValue);
   if(selectedMenuValue == 1){
     jQuery(".selectorDrop").children().hide();
     jQuery(".selectorDrop").show().find(".segments").show();

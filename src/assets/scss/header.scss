@@ -2,6 +2,7 @@
 
 .navOutterContainer {
   position: relative;
+  padding: 0;
 
   .navInnerContainer {
     position: absolute;
@@ -9,107 +10,117 @@
     width: 100%;
     top: 0;
     font-family: $mainSiteFont;
+    background-color: $secondColor;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+
+    .row {
+      margin: auto;
+    }
+  }
+
+  .nav {
+    background: $mainColor;
+    padding: 0;
 
     .selectorDrop {
-      position: relative;
-      // top: -8px;
-      z-index: 1;
+      position: absolute;
+      left: 0;
+      top:108px;
+      z-index: 10;
       background: $secondColor;
       width: 100%;
       border-bottom: 6px solid $firstAccentColor;
-
+      margin:0px;
+      padding:20px;
       .columns {
         padding: 0;
       }
     }
 
-    .nav {
-      background: $mainColor;
+    .logo {
+      height: 108px;
+      background: $secondColor;
       padding: 0;
+    }
 
-      .logo {
-        height: 108px;
-        background: $secondColor;
-        padding: 5px;
+    .top {
+      background: $thirdColor;
+      height: 41px;
+      //width:100%;
+      .button {
+        background: $firstAccentColor;
+        text-transform: uppercase;
+        margin-right: -15px;
+        height: 41px;
+        @include button-dropdown(4px, white, "down");
       }
 
-      .top {
-        background: $thirdColor;
+      .button div::after {
+        @include button-dropdown(4px, white, "down");
+      }
+
+      .menu {
         height: 41px;
-        //width:100%;
-        .button {
-          background: $firstAccentColor;
+
+        .item {
+          color: $secondFontColor;
           text-transform: uppercase;
-          margin-right: -15px;
+          //font-style: italic;
           height: 41px;
-          @include button-dropdown(4px, white, "down");
-        }
+          //  padding: 0 15px;
+          font-size: 11px;
+          font-weight: 600;
+          text-align: center;
+          line-height: 15px;
 
-        .button div::after {
-          @include button-dropdown(4px, white, "down");
-        }
+          div {
+            border-right: 1px solid $secondFontColor;
+            padding-right: 15px;
+            padding-left: 10px;
+          }
 
-        .menu {
-          height: 41px;
-
-          .item {
-            color: $secondFontColor;
-            text-transform: uppercase;
-            //font-style: italic;
-            height: 41px;
-            //  padding: 0 15px;
-            font-size: 11px;
-            font-weight: 600;
-            text-align: center;
-            line-height: 15px;
+          &:last-child {
+            padding: 0;
 
             div {
-              border-right: 1px solid $secondFontColor;
-              padding-right: 15px;
-              padding-left: 10px;
-            }
-
-            &:last-child {
-              padding: 0;
-
-              div {
-                border: 0;
-              }
+              border: 0;
             }
           }
         }
       }
+    }
 
-      .middle {
-        background: $secondAccentColor;
-        height: 67px;
+    .middle {
+      background: $secondAccentColor;
+      height: 67px;
 
-        .menu {
-          .item {
-            text-transform: uppercase;
-            // font-style: italic;
-            height: 67px;
-            padding: 0 55px;
-            border-right: 1px solid $thirdColor;
-            font-size: 13px;
-            font-weight: 600;
-            line-height: 17px;
-            color: white;
-          }
+      .menu {
+        .item {
+          text-transform: uppercase;
+          // font-style: italic;
+          height: 67px;
+          padding: 0 55px;
+          border-right: 1px solid $thirdColor;
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 17px;
+          color: white;
+        }
 
-          .dropNav div::after {
-            @include css-triangle(4px, $firstAccentColor, "down");
-            display: inline-block;
-            margin-left: 5px;
-            margin-bottom: 2px;
-          }
+        .dropNav div::after {
+          @include css-triangle(4px, $firstAccentColor, "down");
+          display: inline-block;
+          margin-left: 5px;
+          margin-bottom: 2px;
         }
       }
+    }
 
-      .bottom {
-        background: $thirdColor;
-        height: 10px;
-      }
+    .bottom {
+      background: $thirdColor;
+      height: 10px;
     }
   }
 }
