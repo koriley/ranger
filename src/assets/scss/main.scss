@@ -245,6 +245,8 @@ body {
     //max-width: $mainSiteWidth;
     // border: 1px solid red;
     background: $mainColor;
+    color: $secondFontColor;
+    font-family: $secondSiteFont;
 }
 
 .tabs-title > a{
