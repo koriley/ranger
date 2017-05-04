@@ -9,7 +9,7 @@
     // text-align: center;
     // border:1px solid red;
     .columns {
-        //padding: 0;
+        padding: 0;
         position: relative;
 
         .allVisible {
@@ -22,7 +22,7 @@
     }
 
     .main {
-        margin-top: -65px;
+        margin-top: -50px;
         height: 500px;
         filter: grayscale(100%);
         padding: 0;
@@ -54,12 +54,12 @@
         width: 100%;
         position: absolute;
         //  border: 1px solid red;
-        top: -25px;
+        top: -40px;
 
         &:hover {}
 
         h1 {
-            padding: 25px 0 0 25px;
+            padding: 25px 0 0 40px;
             font-size: 31px;
             font-weight: 600;
             line-height: 42px;
@@ -76,12 +76,13 @@
 
         h4 {
             font-family: $mainSiteFont;
-            color: $secondFontColor;
+            color: $white;
+            opacity: 0.5;
             font-size: 16px;
             line-height: 21px;
             font-style: normal;
-            text-shadow: 1px 1px 0.2px black;
-            margin-left: 25px;
+            //text-shadow: 1px 1px 0.2px black;
+            margin-left: 40px;
             margin-top: -10px;
             text-transform: capitalize;
         }
