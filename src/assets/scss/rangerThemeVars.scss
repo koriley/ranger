@@ -1,4 +1,11 @@
 @import 'settings';
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('/assets/fonts/oswald-bolditalic-webfont.woff2') format('woff2'),
+         url('/assets/fonts/oswald-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 $mainColor: #141414; //black
 $secondColor: #171717; //darkerBlack
 // $thirdColor: #252525; //lighterBlack
@@ -9,9 +16,9 @@ $firstFontColor: #ffffff; //white
 $secondFontColor: #8B8B8B; //grey-ish
 //color from invision #131313
 //import from google
-$mainSiteFont: 'Oswald', sans-serif;
+$mainSiteFont: 'oswaldbold', sans-serif;
 $secondSiteFont: 'Lato', sans-serif; //site width
-$mainSiteWidth: 1600px;
+$mainSiteWidth: 1800px;
 $borderColor:#2f2f2f;
 @mixin skewMe($degree) {
     height: 518px;
@@ -30,4 +37,3 @@ $borderColor:#2f2f2f;
 }
 
 // foundation over-write
-
