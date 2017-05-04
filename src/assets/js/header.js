@@ -52,6 +52,7 @@ function resetMenu(element) {
   these are the nav mouse enter and leave state anonymous functions
 ************************/
 jQuery(".mainNav").mouseenter(function () {
+  
   if (selectedMenuValue == 0) {
     colorize(this);
   }
@@ -71,12 +72,21 @@ jQuery(".dropNav").on("click touchstart", function () {
   Get the main menu item clicked index number. Used to know the the menu is active.
   **************/
   selectedMenuValue = jQuery(this).attr("data-index");
-  // console.log(`${newSelectedMenuItem} ${oldSelectedMenuItem}`);
+  //  console.log(`${newSelectedMenuItem} ${oldSelectedMenuItem}`);
 
   /******************
   May be removed, this is to fill out the dropdown with the name of the
   item clicked for testing.
   *******************/
+  if(selectedMenuValue == 1){
+    jQuery(".selectorDrop").children().hide();
+    jQuery(".selectorDrop").show().find(".segments").show();
+  }
+  if(selectedMenuValue == 4){
+    jQuery(".selectorDrop").children().hide();
+    jQuery(".selectorDrop").show().find(".owners").show();
+  }
+  
   //jQuery(".selectorDrop").html(jQuery(this).attr("data-name"));
   /*******************
   This is setting up the vars to juggle which item is in an active state.
