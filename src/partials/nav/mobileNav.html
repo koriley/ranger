@@ -3,14 +3,13 @@
     <div class="smallNav">
       <div class="title-bar">
         <div class="title-bar-left">
-          <button class="menu-icon" type="button" data-toggle="offCanvasLeft"></button>
+          <div class="menu-icon mobileMenuCall" type="button"></div>
         </div>
         <span class="title-bar-title"><a href="http://rangerboats.com"><img src="{{root}}assets/img/logo.png" /></a></span>
-        <div class="title-bar-right">
-          <button class="menu-icon" type="button" data-toggle="offCanvasRight"></button>
-        </div>
+      </div>
+      <div class="mobileSelector" style="display:none;">
+        {{> mobileMenuItems}}
       </div>
     </div>
   </div>
 </div>
-

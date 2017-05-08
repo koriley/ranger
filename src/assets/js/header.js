@@ -133,17 +133,24 @@ jQuery(".dropNav").on("click touchstart", function(event) {
   *******************/
   //set the menu var to open
   jQuery('.selectorDrop').slideFadeToggle();
-   menuOpen = 1;
-event.stopPropagation();
-  
-  
+  menuOpen = 1;
+  event.stopPropagation();
+
 });
 
 //close the menu if you click anywhere else on the page and the menu is open.
 jQuery("html").not('.dropNav').on("touchstart click", function() {
   if (menuOpen == 1) {
-    
+
     jQuery('.selectorDrop').slideFadeToggle();
     menuOpen = 0;
   }
+});
+
+//mobile menu toggle
+jQuery('.mobileMenuCall').on('touchstart click', function(e) {
+  e.stopPropagation();
+  e.preventDefault();
+  jQuery(".mobileSelector ul.menu").foundation('hideAll');
+  jQuery('.mobileSelector').slideFadeToggle();
 });
