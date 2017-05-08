@@ -133,6 +133,7 @@ jQuery(".dropNav").on("click touchstart", function(event) {
   *******************/
   //set the menu var to open
   jQuery('.selectorDrop').slideFadeToggle();
+
   menuOpen = 1;
   event.stopPropagation();
   event.preventDefault();
@@ -147,6 +148,7 @@ jQuery("html").not('.dropNav').on("touchstart click", function() {
     menuOpen = 0;
   }
 });
+
 
 //mobile menu toggle
 jQuery('.mobileMenuCall').on('touchstart click', function(e) {
