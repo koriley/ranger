@@ -77,17 +77,54 @@
       &:hover {}
     }
 
-    h4 {
-      font-family: 'oswaldregular';
-      color: $white;
-      opacity: 0.5;
-      font-size: 16px;
-      line-height: 21px;
-      font-style: normal;
-      //text-shadow: 1px 1px 0.2px black;
-      margin-left: 40px;
-      margin-top: -10px;
-      text-transform: capitalize;
+    .textLayer {
+        // padding:25px;
+        height: inherit;
+        width: 100%;
+        position: absolute;
+        //  border: 1px solid red;
+        top: -40px;
+
+        &:hover {}
+
+        h1 {
+            padding: 25px 0 0 40px;
+            font-size: 31px;
+            font-weight: 600;
+            line-height: 42px;
+            height: inherit;
+            // width: 100%;
+            font-style: normal;
+            font-family: $mainSiteFont;
+            display: inline-block;
+            // border:1px solid red;
+            //text-shadow: 1px 1px 4px black;
+
+            &:hover {}
+        }
+
+        h4 {
+            font-family: 'oswaldregular';
+            color: $white;
+            opacity: 0.5;
+            font-size: 16px;
+            line-height: 21px;
+            font-style: normal;
+            margin-left: 40px;
+            margin-top: -10px;
+            text-transform: capitalize;
+        }
+
+        .arrow {
+            display: inline-block;
+            vertical-align: middle;
+            // border:1px solid blue;
+            img {
+                vertical-align: middle;
+                margin-bottom: 20%;
+                margin-left: -35%;
+            }
+        }
     }
 
     .arrow {

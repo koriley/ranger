@@ -2,14 +2,16 @@ $footerTextColor:#9f9f9f;
 $footerTextColorSub:#707070;
 
 .footer{
+    padding-top: 70px;
+    padding-bottom: 70px;
   .footerLogo{
     margin:auto;
     //border:1px solid red;
     text-align:center;
   }
   h1{
-    
-    
+
+
   }
   h4{
     color:$footerTextColorSub;
@@ -22,7 +24,7 @@ $footerTextColorSub:#707070;
   .footPhoneNum{
     color:$firstAccentColor;
     margin-bottom:15px;
-    
+
   }
   ul{
     list-style: none;
@@ -32,7 +34,7 @@ $footerTextColorSub:#707070;
     margin:0px;
     text-align:left;
     padding-top:15px;
-    
+
     li{
       padding-bottom:15px;
       &:first-child{
@@ -42,9 +44,9 @@ $footerTextColorSub:#707070;
         text-transform: uppercase;
         line-height: 16px;
         padding-bottom:15px;
-        
+
       }
-      
+
       text-transform: capitalize;
       padding:0px;
       margin:0px;

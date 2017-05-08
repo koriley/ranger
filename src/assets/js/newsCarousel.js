@@ -8,7 +8,7 @@ jQuery('.newsSlider').attr("max", newsItems);
 
 jQuery(".owl-carousel").owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 20,
     nav: true,
 
     responsive: {
@@ -19,7 +19,7 @@ jQuery(".owl-carousel").owlCarousel({
             items: 3
         },
         1000: {
-            items: 5
+            items: 4
         }
     }
 });
