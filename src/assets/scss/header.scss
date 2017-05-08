@@ -197,6 +197,7 @@
 }
 
 .smallNav{
+  position:relative;
   .title-bar{
     
     
@@ -213,7 +214,16 @@
       }
     }
   }
-  
+  .mobileSelector{
+    width:100%;
+    height:100vh;
+    padding:10px;
+    color:$firstFontColor;
+    position:absolute;
+    top:42px;
+    z-index:501;
+    background:$mainColor
+  }
 }
 
 
