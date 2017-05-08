@@ -69,6 +69,11 @@ This is the click state for the main nav
 ***********************/
 jQuery(".dropNav").on("click touchstart", function(event) {
 
+  if (menuOpen == 1) {
+    jQuery('.selectorDrop').slideFadeToggle();
+    menuOpen = 0;
+  }
+
   /**************
   Get the main menu item clicked index number. Used to know the the menu is active.
   **************/
@@ -79,15 +84,9 @@ jQuery(".dropNav").on("click touchstart", function(event) {
   May be removed, this is to fill out the dropdown with the name of the
   item clicked for testing.
   *******************/
-  // console.log(selectedMenuValue);
-  if (selectedMenuValue == 1) {
-    jQuery(".selectorDrop").children().hide();
-    jQuery(".selectorDrop").find(".segments").show();
-  }
-  if (selectedMenuValue == 4) {
-    jQuery(".selectorDrop").children().hide();
-    jQuery(".selectorDrop").find(".owners").show();
-  }
+
+  jQuery(".selectorDrop").children().hide("slow");
+  jQuery(".selectorDrop").find("." + selectedMenuValue).show();
 
   //jQuery(".selectorDrop").html(jQuery(this).attr("data-name"));
   /*******************
@@ -149,11 +148,30 @@ jQuery("html").not('.dropNav').on("touchstart click", function() {
   }
 });
 
-
 //mobile menu toggle
 jQuery('.mobileMenuCall').on('touchstart click', function(e) {
   e.stopPropagation();
   e.preventDefault();
   jQuery(".mobileSelector ul.menu").foundation('hideAll');
   jQuery('.mobileSelector').slideFadeToggle();
+});
+
+//nav segemnt selector click
+jQuery('.navSegmentSelector a').on('touchstart click', function(e) {
+  
+  e.stopPropagation();
+  e.preventDefault();
+  var segment = jQuery(this).attr('href');
+
+  jQuery(".selectorDrop").children().hide();
+  jQuery(".selectorDrop").find("." + segment).show();
+  
+
+});
+
+jQuery('.backButton').on("touchstart click", function(e) {
+  e.stopPropagation();
+  e.preventDefault();
+  jQuery(".selectorDrop").children().hide();
+  jQuery(".selectorDrop").find("." + selectedMenuValue).show();
 });
