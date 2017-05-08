@@ -135,6 +135,7 @@ jQuery(".dropNav").on("click touchstart", function(event) {
   jQuery('.selectorDrop').slideFadeToggle();
   menuOpen = 1;
   event.stopPropagation();
+  event.preventDefault();
 
 });
 
