@@ -22,7 +22,6 @@
       }
     }
   }
-
   .main {
     margin-top: -50px;
     height: 500px;
@@ -62,46 +61,21 @@
 
     &:hover {}
 
-    h1 {
-      padding: 25px 0 0 40px;
-      font-size: 31px;
-      font-weight: 600;
-      line-height: 42px;
-      height: inherit;
-      // width: 100%;
-      font-style: normal;
-      font-family: $mainSiteFont;
-      display: inline-block;
-      // border:1px solid red;
-      //text-shadow: 1px 1px 4px black;
-      &:hover {}
-    }
-
-    .textLayer {
-        // padding:25px;
-        height: inherit;
-        width: 100%;
-        position: absolute;
-        //  border: 1px solid red;
-        top: -40px;
-
-        &:hover {}
-
         h1 {
-            padding: 25px 0 0 40px;
-            font-size: 31px;
-            font-weight: 600;
-            line-height: 42px;
-            height: inherit;
-            // width: 100%;
-            font-style: normal;
-            font-family: $mainSiteFont;
-            display: inline-block;
-            // border:1px solid red;
-            //text-shadow: 1px 1px 4px black;
+          padding: 25px 0 0 40px;
+          font-size: 31px;
+          font-weight: 600;
+          line-height: 42px;
+          height: inherit;
+          // width: 100%;
+          font-style: normal;
+          font-family: $mainSiteFont;
+          display: inline-block;
+          // border:1px solid red;
+          //text-shadow: 1px 1px 4px black;
+          &:hover {}
 
-            &:hover {}
-        }
+          }
 
         h4 {
             font-family: 'oswaldregular';
@@ -113,31 +87,20 @@
             margin-left: 40px;
             margin-top: -10px;
             text-transform: capitalize;
-        }
 
-        .arrow {
-            display: inline-block;
+            }
+
+    .arrow {
+        display: inline-block;
+        vertical-align: middle;
+        // border:1px solid blue;
+        img {
             vertical-align: middle;
-            // border:1px solid blue;
-            img {
-                vertical-align: middle;
-                margin-bottom: 20%;
-                margin-left: -35%;
+            margin-bottom: 20%;
+            margin-left: -35%;
             }
         }
     }
-
-    .arrow {
-      display: inline-block;
-      vertical-align: middle;
-      // border:1px solid blue;
-      img {
-        vertical-align: middle;
-        margin-bottom: 20%;
-        margin-left: -35%;
-      }
-    }
-  }
 }
 
 
@@ -156,7 +119,7 @@
   .columns {
     padding: 0;
     position: relative;
-   
+
     .allVisible {
       filter:grayscale(0%);
       transition: all 0.8s ease;
@@ -170,16 +133,15 @@
 
   .main {
     margin-top: -25px;
-    height: 499px;
+    height: 200px;
     filter: grayscale(100%);
     padding: 0;
     background-color: black;
     // border:1px solid green;
     @include breakpoint(medium down) {
-      height: 247px;
-      
-    }
+      height: 160px;
 
+    }
     &:hover {
       filter:grayscale(0%);
       transition: all 0.8s ease;
@@ -201,65 +163,46 @@
       }
     }
   }
-
   .textLayer {
-    // padding:25px;
-    height: inherit;
-    width: 100%;
-    position: absolute;
-    //  border: 1px solid red;
-    top: -40px;
+      text-align: center;
 
-    &:hover {}
+      h1 {
+        padding: 25px 0 0 0px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 42px;
+        height: inherit;
+        // width: 100%;
+        font-style: normal;
+        font-family: $mainSiteFont;
+        display: inline-block;
+        // border:1px solid red;
+        //text-shadow: 1px 1px 4px black;
+        &:hover {}
 
-    h1 {
-      padding: 25px 0 0 40px;
-      font-size: 31px;
-      font-weight: 600;
-      line-height: 42px;
-      height: inherit;
-      // width: 100%;
-      font-style: normal;
-      font-family: $mainSiteFont;
-      display: inline-block;
-      // border:1px solid red;
-      //text-shadow: 1px 1px 4px black;
-      @include breakpoint(medium down) {
-        padding: 23px 0 0 10px;
-        font-size: 31px;
-        font-size: 17px;
-      }
-      @include breakpoint(large) {
-        padding: 23px 0 0 10px;
-        font-size: 31px;
-        font-size: 17px;
-      }
+        }
 
-      &:hover {}
+      h4 {
+        font-family: 'oswaldregular';
+        color: $white;
+        opacity: 0.5;
+        font-size: 16px;
+        line-height: 21px;
+        font-style: normal;
+        //margin-left: 40px;
+        margin-top: -10px;
+        text-transform: capitalize;
+
+        }
+        .arrow {
+            display: none;
+            vertical-align: middle;
+            // border:1px solid blue;
+            img {
+                vertical-align: middle;
+                margin-bottom: 20%;
+                margin-left: -35%;
+                }
+            }
     }
-
-    h4 {
-      font-family: $mainSiteFont;
-      color: $white;
-      opacity: 0.5;
-      font-size: 16px;
-      line-height: 21px;
-      font-style: normal;
-      //text-shadow: 1px 1px 0.2px black;
-      margin-left: 40px;
-      margin-top: -10px;
-      text-transform: capitalize;
-    }
-
-    .arrow {
-      display: inline-block;
-      vertical-align: middle;
-      // border:1px solid blue;
-      img {
-        vertical-align: middle;
-        margin-bottom: 20%;
-        margin-left: -35%;
-      }
-    }
-  }
 }

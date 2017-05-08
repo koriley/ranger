@@ -31,9 +31,8 @@
       z-index: 499;
       background: $secondColor;
       width: 100%;
-      border-bottom: 6px solid $firstAccentColor;
       margin: 0;
-      padding: 20px;
+      padding: 20px 15px 20px 15px;
 
       .columns {
         padding: 0;
@@ -44,14 +43,17 @@
     }
 
     .logo {
-      height: 108px;
+      //height: 108px;
       background: $secondColor;
       padding: 0;
       padding-top:0px;
       img {
-        
-        @include breakpoint(medium down) {
-          padding-top: 16px;
+        max-width: 180px;
+        padding:10px;
+        text-align: center;
+        @include breakpoint(medium only) {
+            padding-top: 26px;
+            width: 120px;
         }
       }
     }
@@ -138,6 +140,25 @@
     }
   }
 }
+
+.dropdown {
+    li a {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 11px;
+        line-height: 18px;
+        padding-right: 15px;
+        //margin-top: 5px;
+        background: $firstAccentColor;
+    }
+}
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    right: 15px;
+    border-color: #ffffff transparent transparent;
+}
+.dropdown.menu > li.is-dropdown-submenu-parent > a {
+    padding-right: 38px;
+}
 // this is segment 'glass' sub menu css
 
 .floatingModelPriceBlock {
@@ -212,16 +233,19 @@
 
 .smallNav {
   position: relative;
+  height: 60px;
 
   .title-bar {
-    text-align: center;
+    text-align: left;
+    padding: 0px;
 
     .title-bar-title {
       margin-top: -5px;
+      padding: 10px;
 
       img {
         margin: auto;
-        height: 35px;
+        height: 45px;
         margin: 0;
       }
     }
@@ -230,11 +254,21 @@
   .mobileSelector {
     width: 100%;
     height: 100vh;
-    padding: 10px;
+    padding: 0px;
     color: $firstFontColor;
     position: absolute;
-    top: 42px;
+    top: 60px;
     z-index: 501;
     background: $mainColor;
   }
+}
+.menu-icon {
+    //padding: 16px;
+    width: 26px;
+    height:6px;
+}
+.title-bar-right {
+    border-left: 2px solid $secondAccentColor;
+    height:60px;
+    padding: 10px 15px 10px 15px;
 }
