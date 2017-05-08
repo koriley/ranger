@@ -214,16 +214,19 @@
 
 .smallNav {
   position: relative;
+  height: 60px;
 
   .title-bar {
-    text-align: center;
+    text-align: left;
+    padding: 0px;
 
     .title-bar-title {
       margin-top: -5px;
+      padding: 10px;
 
       img {
         margin: auto;
-        height: 35px;
+        height: 45px;
         margin: 0;
       }
     }
@@ -232,11 +235,21 @@
   .mobileSelector {
     width: 100%;
     height: 100vh;
-    padding: 10px;
+    padding: 0px;
     color: $firstFontColor;
     position: absolute;
-    top: 42px;
+    top: 60px;
     z-index: 501;
     background: $mainColor;
   }
+}
+.menu-icon {
+    //padding: 16px;
+    width: 26px;
+    height:6px;
+}
+.title-bar-right {
+    border-left: 2px solid $secondAccentColor;
+    height:60px;
+    padding: 10px 15px 10px 15px;
 }
