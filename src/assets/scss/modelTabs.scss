@@ -64,7 +64,7 @@ $borderColor: #292929;
     font-weight:600px;
     line-height:21px;
     text-transform: uppercase;
-    
+
   }
   .small{
     font-family: $secondSiteFont;
@@ -72,14 +72,14 @@ $borderColor: #292929;
     line-height:25px;
     color: $secondFontColor;
   }
-  
+
 }
 table {
     tbody {
         border: 0;
         background-color: transparent;
         border: 0;
-        
+
         tr {
             border: 0;
 
@@ -88,7 +88,7 @@ table {
             }
 
             td {
-                
+
                 span{
                 font-family: $secondSiteFont;
                 color:$secondFontColor;
@@ -113,7 +113,7 @@ table {
       border-top:0px;
     }
     a{
-      
+
       height:21px;
       color:$firstFontColor;
       font-family: $mainSiteFont;
@@ -123,23 +123,23 @@ table {
       text-transform: uppercase;
       padding:0px;
       margin:0px;
-      
-      
+
+
       &::after{
         border-color:$firstFontColor transparent;
       }
     }
     ul{
       list-style: none;
-      padding:20px;
-      
+      padding:20px 10px 20px 10px;
+
       li{
         font-family: $secondSiteFont;
         color:$secondFontColor;
         font-size:14px;
         padding:0px;
         border:0px;
-      
+
       }
     }
   }
