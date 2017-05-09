@@ -10,55 +10,45 @@ $slideBar: #4a4a4a;
     }
 
     .textBox {
-        h4 {
-            font-family: $secondSiteFont;
-            font-size: 15px;
-            line-height: 25px;
-            color: $secondFontColor;
-            padding: 0 5px;
-            text-transform: none;
-        }
 
         h1 {
             font-family: $mainSiteFont;
             font-size: 20px;
             font-weight: 600;
             line-height: 27px;
-            padding: 15px;
+            padding: 15px 0 0 0;
         }
 
         .readMore {
-            font-family: $mainSiteFont;
+            font-family: $secondaryHeader;
             color: $firstAccentColor;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 19px;
-            text-transform: capitalize;
-            padding: 15px;
+            text-align: left;
+            text-transform: uppercase;
+            padding: 15px 0 15px 0;
             width: 100px;
             background-image: url('/assets/img/white-arrow-button.svg');
             background-repeat: no-repeat;
-            background-position: 95% 55%;
+            background-position: 90% 50%;
         }
     }
 }
 
+.control-group {
+    padding-top: 70px;
+}
 .control {
   .next{
-    color:white;
-    float:left;
-    cursor: pointer;
-    width:20px;
-    height:20px;
-    background:url('/assets/img/sliderArrowLeft.svg');
-    transform: rotate(180deg);
+      cursor: pointer;
+      margin-top: 7px;
+      text-align: left;
+      transform: rotate(180deg);
   }
   .prev{
-    float:right;
-    color:white;
-    cursor:pointer;
-    width:20px;
-    height:20px;
-    background:url('/assets/img/sliderArrowLeft.svg');
+      cursor: pointer;
+      margin-top: 2px;
+      text-align: left;
   }
     input[type=range] {
         -webkit-appearance: none;
