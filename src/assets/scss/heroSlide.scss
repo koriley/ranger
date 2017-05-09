@@ -16,6 +16,10 @@
       }
 
       .textBlock {
+        position: absolute;
+        z-index:2002;
+        // border:1px solid red;
+        top:0;
         @include breakpoint(small) {
           padding-top: 60px;
           padding-left: 28px;
@@ -150,7 +154,11 @@
   }
 }
 
-.active{
+.heroTextContainer{
+   
+}
+
+.active .heroImageContainer{
   animation-name:zoomin;
   animation-duration:35s;
   
