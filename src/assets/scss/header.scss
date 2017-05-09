@@ -1,5 +1,9 @@
 @import 'rangerThemeVars';
 
+.item{
+    cursor: pointer;
+}
+
 .navOutterContainer {
   position: relative;
   padding: 0;
@@ -80,13 +84,12 @@
         .item {
           color: $secondFontColor;
           text-transform: uppercase;
-          //font-style: italic;
           height: 41px;
-          //  padding: 0 15px;
-          font-size: 11px;
-          font-weight: 600;
+          font-family: $secondaryHeader;
+          font-size: 12px;
           text-align: center;
           line-height: 15px;
+          cursor: pointer;
 
           div {
             border-right: 1px solid $secondFontColor;

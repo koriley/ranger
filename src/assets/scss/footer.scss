@@ -37,12 +37,13 @@ $footerTextColorSub:#707070;
 
     li{
       padding-bottom:15px;
+      line-height: 30px;
       &:first-child{
         font-family: $mainSiteFont;
         color:$footerTextColor;
         font-size: 16px;
         text-transform: uppercase;
-        line-height: 16px;
+        line-height: 30px;
         padding-bottom:15px;
 
       }

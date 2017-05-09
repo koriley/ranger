@@ -5,13 +5,14 @@
 
   ul {
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 0px 10px 0px;
 
     li {
       font-family: $secondSiteFont;
       font-size: 13px;
+      line-height: 30px;
       text-transform: uppercase;
-      text-align: center;
+      text-align: left;
     }
   }
 
@@ -19,32 +20,29 @@
     font-family: $mainSiteFont;
     font-size: 16px;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
   }
 
   .series {
-    font-family: $mainSiteFont;
+    font-family: $secondaryHeader;
     font-size: 12px;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     color: $secondFontColor;
   }
 }
 
 .navSegment {
-  h3 {
-    padding-left: 25px;
-  }
+    padding: 25px 35px 25px 35px;
 
   .backButton {
-    padding-left: 30px;
-    margin-left: 30px;
     background-color: transparent;
     text-transform: uppercase;
     color: $firstAccentColor;
     position: relative;
+    margin-left: 8px;
     // border: 1px solid red;
-    font-family: $secondSiteFont;
+    font-family: $secondaryHeader;
     &::before {
       background-image: url('/assets/img/white-arrow-button.svg');
       background-repeat: no-repeat;

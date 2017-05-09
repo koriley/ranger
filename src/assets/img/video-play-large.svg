@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="182px" height="182px" viewBox="0 0 182 182" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-111.000000, -503.000000)" id="Group">
+            <g transform="translate(112.000000, 504.000000)">
+                <circle id="Oval-2" stroke="#FFFFFF" opacity="0.341995018" cx="90" cy="90" r="90"></circle>
+                <circle id="Oval-2-Copy" fill="#FFFFFF" opacity="0.299026268" cx="90" cy="90" r="50"></circle>
+                <circle id="Oval-2-Copy-2" fill="#FFFFFF" cx="90" cy="90" r="40"></circle>
+                <polygon id="Triangle-2" stroke="#141414" stroke-width="3" fill="#141414" stroke-linecap="round" stroke-linejoin="round" transform="translate(91.500000, 90.236842) rotate(90.000000) translate(-91.500000, -90.236842) " points="91.5 83.7368421 100.736842 96.7368421 82.2631579 96.7368421"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
