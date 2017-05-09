@@ -1,151 +1,166 @@
-.heroRelative{
-position:relative;
+.heroRelative {
+  position: relative;
 
-.heroCarousel {
+  .heroCarousel {
     .slide {
-        width: 100%;
-        position: relative;
+      width: 100%;
+      position: relative;
+      @include breakpoint(small) {
+        height: 600px;
+      }
+      @include breakpoint(medium) {
+        height: 800px;
+      }
+      @include breakpoint(large) {
+        height: 955px;
+      }
+
+      .textBlock {
         @include breakpoint(small) {
-            height: 600px;
-        }
-        @include breakpoint(medium) {
-            height: 800px;
+          padding-top: 60px;
+          padding-left: 28px;
         }
         @include breakpoint(large) {
-            height: 955px;
+          padding-top: 200px;
+          padding-left: 28px;
         }
 
-        .textBlock {
-            @include breakpoint(small) {
-                padding-top: 60px;
-                padding-left: 28px;
-            }
-            @include breakpoint(large) {
-                padding-top: 200px;
-                padding-left: 28px;
-
-            }
-            &:hover {
-                //margin-left: 10px;
-                //transition: all 0.4s ease-in-out;
-            }
-
-            .wordAndArrow {
-                h1 {
-                    padding: 5px 0 0 0px;
-                    font-size: 60px;
-                    line-height: 60px;
-                    font-style: normal;
-                    font-family: $mainSiteFont;
-                    display: inline-block;
-                    @include breakpoint(small only) {
-                        font-size: 40px;
-                        line-height: 40px;
-                    }
-                }
-
-                .arrow {
-                    width: 20px;
-                    display: inline-block;
-                    margin-left: 20px;
-                    text-shadow: 1px 1px 0.2px black;
-                    margin-bottom: 40px;
-                    @include breakpoint(small only) {
-                        display: none;
-                    }
-
-                }
-            }
-
-            h4 {
-                font-family: 'oswaldregular';
-                color: $firstFontColor;
-                font-size: 24px;
-                line-height: 24px;
-                text-transform: uppercase;
-                @include breakpoint(small only) {
-                    font-size: 20px;
-                    line-height: 20px;
-                }
-
-            }
+        &:hover {
+          //margin-left: 10px;
+          //transition: all 0.4s ease-in-out;
         }
-        .video-play-button {
-            @include breakpoint(small) {
-                margin-left: 28px;
-                width: 120px;
-                margin-top: 100px;
+
+        .wordAndArrow {
+          h1 {
+            padding: 5px 0 0;
+            font-size: 60px;
+            line-height: 60px;
+            font-style: normal;
+            font-family: $mainSiteFont;
+            display: inline-block;
+            @include breakpoint(small only) {
+              font-size: 40px;
+              line-height: 40px;
             }
-            @include breakpoint(large) {
-                margin-top: 120px;
-                width: 180px;
-                margin-left: 28px;
+          }
+
+          .arrow {
+            width: 20px;
+            display: inline-block;
+            margin-left: 20px;
+            text-shadow: 1px 1px 0.2px black;
+            margin-bottom: 40px;
+            @include breakpoint(small only) {
+              display: none;
             }
+          }
         }
+
+        h4 {
+          font-family: 'oswaldregular';
+          color: $firstFontColor;
+          font-size: 24px;
+          line-height: 24px;
+          text-transform: uppercase;
+          @include breakpoint(small only) {
+            font-size: 20px;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .video-play-button {
+        @include breakpoint(small) {
+          margin-left: 28px;
+          width: 120px;
+          margin-top: 100px;
+        }
+        @include breakpoint(large) {
+          margin-top: 120px;
+          width: 180px;
+          margin-left: 28px;
+        }
+      }
     }
-}
+  }
 
-.whiteBox {
+  .whiteBox {
     @include breakpoint(xxlarge) {
-        max-width: 1800px;
-        position: absolute;
-        border: 1px solid rgba(255,255,255, .25);
-        top: 18px;
-        bottom: 18px;
-        left: 18px;
-        right: 18px;
-        z-index: 10;
-        pointer-events: none;
+      max-width: 1800px;
+      position: absolute;
+      border: 1px solid rgba(255,255,255, .25);
+      top: 18px;
+      bottom: 18px;
+      left: 18px;
+      right: 18px;
+      z-index: 10;
+      pointer-events: none;
     }
     @include breakpoint(small) {
-        border:none;
+      border: none;
     }
+
     .heroControles {
-        @include breakpoint(small) {
-            width: 53px;
-            height: 110px;
-            position: absolute;
-            top: 200px;
-            right: -1px;
-            z-index: 500;
-            pointer-events: auto;
-        }
-        @include breakpoint(medium) {
-            top: 280px;
-        }
-        @include breakpoint(large) {
-            top: 454px;
-        }
-        @include breakpoint(xlarge) {
-            top: 380px;
+      @include breakpoint(small) {
+        width: 53px;
+        height: 110px;
+        position: absolute;
+        top: 200px;
+        right: -1px;
+        z-index: 500;
+        pointer-events: auto;
+      }
+      @include breakpoint(medium) {
+        top: 280px;
+      }
+      @include breakpoint(large) {
+        top: 454px;
+      }
+      @include breakpoint(xlarge) {
+        top: 380px;
+      }
 
-        }
-        .heroNext {
-            color: white;
-            cursor: pointer;
-            width: 53px;
-            height: 53px;
-            background: url('/assets/img/white-arrow-button.svg');
-            transform: rotate(180deg);
-            border:1px solid rgba(255,255,255, .25);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: 50%;
-            float:right;
-        }
+      .heroNext {
+        color: white;
+        cursor: pointer;
+        width: 53px;
+        height: 53px;
+        background: url('/assets/img/white-arrow-button.svg');
+        transform: rotate(180deg);
+        border: 1px solid rgba(255,255,255, .25);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50%;
+        float: right;
+      }
 
-        .heroPrev {
-          border:1px solid rgba(255,255,255, .25);
-            color: white;
-            cursor: pointer;
-            width: 53px;
-            height: 53px;
-            background: url('/assets/img/white-arrow-button.svg');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: 50%;
-            float:right;
-        }
+      .heroPrev {
+        border: 1px solid rgba(255,255,255, .25);
+        color: white;
+        cursor: pointer;
+        width: 53px;
+        height: 53px;
+        background: url('/assets/img/white-arrow-button.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50%;
+        float: right;
+      }
     }
+  }
 }
+
+.active{
+  animation-name:zoomin;
+  animation-duration:35s;
+  
+}
+@-webkit-keyframes zoomin {
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+  }
 }
