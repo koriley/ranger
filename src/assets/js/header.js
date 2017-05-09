@@ -85,7 +85,7 @@ jQuery(".dropNav").on("click touchstart", function(event) {
   item clicked for testing.
   *******************/
 
-  jQuery(".selectorDrop").children().hide("slow");
+  jQuery(".selectorDrop").children().hide();
   jQuery(".selectorDrop").find("." + selectedMenuValue).show();
 
   //jQuery(".selectorDrop").html(jQuery(this).attr("data-name"));
@@ -97,12 +97,12 @@ jQuery(".dropNav").on("click touchstart", function(event) {
   /******************
     initiates a reset on the menu because nothing is in an active state.
   ******************/
-  if (newSelectedMenuItem === oldSelectedMenuItem) {
-    selectedMenuValue = 0;
-    //resetMenu(this);
-
-    // jQuery('.selectorDrop').hide();
-  }
+  // if (newSelectedMenuItem === oldSelectedMenuItem) {
+  //   selectedMenuValue = 0;
+  //   //resetMenu(this);
+  // 
+  //   // jQuery('.selectorDrop').hide();
+  // }
   /******************
   initial click on a menu setting up the current item as the active state. this will change if other elements are selected.
   Happens in the next if/
@@ -172,6 +172,7 @@ jQuery('.navSegmentSelector a').on('touchstart click', function(e) {
 jQuery('.backButton').on("touchstart click", function(e) {
   e.stopPropagation();
   e.preventDefault();
+
   jQuery(".selectorDrop").children().hide();
   jQuery(".selectorDrop").find("." + selectedMenuValue).show();
 });
