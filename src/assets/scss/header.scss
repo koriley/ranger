@@ -118,7 +118,7 @@
           // font-style: italic;
           height: 67px;
           padding: 0 55px;
-          border-right: 1px solid $thirdColor;
+          border-right: 1px solid #2F2F2F;
           font-size: 13px;
           font-weight: 600;
           line-height: 17px;
@@ -144,15 +144,21 @@
   }
 }
 
+.dropdown.menu > li.is-dropdown-submenu-parent > a {
+    background: $firstAccentColor;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 15px;
+}
+
 .dropdown {
     li a {
+        line-height: 10px;
+        font-size: 13px;
+        border: none;
         color: $white;
-        text-transform: uppercase;
-        font-size: 11px;
-        line-height: 18px;
-        padding-right: 15px;
-        //margin-top: 5px;
-        background: $firstAccentColor;
+        background: $black;
     }
 }
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
@@ -161,6 +167,11 @@
 }
 .dropdown.menu > li.is-dropdown-submenu-parent > a {
     padding-right: 38px;
+}
+.is-dropdown-submenu {
+    background: $black;
+    border:none;
+    font-family: $secondSiteFont;
 }
 // this is segment 'glass' sub menu css
 
