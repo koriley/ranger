@@ -10,10 +10,7 @@
     margin-top: 25px;
     font-family: $mainSiteFont;
 
-    h1 {
-        font-size: 31px;
-        line-height: 42px;
-    }
+  
 
     hr {
         width: 100%;
@@ -29,6 +26,7 @@
         // border:1px solid red;
         tr {
             td {
+              font-family: $secondSiteFont;
                 &:nth-child(odd) {
                     text-align: left;
                     text-transform: uppercase;
@@ -132,12 +130,7 @@
             a {
                 // border: 1px solid green;
                 margin: 0 20px;
-                font-family: $mainSiteFont;
-                font-size: 25px;
-                font-weight: 600;
-                line-height: 20px;
-                color: $firstFontColor;
-                text-transform: uppercase;
+                
                 cursor:default;
                 &[aria-selected='true'] {
                     background: transparent;

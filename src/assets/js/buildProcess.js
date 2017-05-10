@@ -1,9 +1,8 @@
-
 //this stopes the default behavior of tabs.
 jQuery(".buildTabControls .tabs-title a").on("touchstart click", function(event) {
   event.stopPropagation();
   event.preventDefault();
-  console.log("click");
+  
 });
 
 var buildTabs = [];
@@ -19,22 +18,20 @@ jQuery('.buildTabControls .tabs .tabs-title a').each(function() {
 //next button
 jQuery('.buildNext').click(function() {
   var whichTabs = getTabs(1);
-tabSelect(buildTabs[whichTabs.current])
+  tabSelect(buildTabs[whichTabs.current])
   // console.log('current tab = ' + buildTabs[whichTabs.current] + ' previous tab = ' + buildTabs[whichTabs.previous]);
-  jQuery(buildTabs[whichTabs.previous]).hide();
-  jQuery(buildTabs[whichTabs.current]).show();
+  tabShowHide(buildTabs[whichTabs.previous], buildTabs[whichTabs.current])
+
 });
 
 //prev button
 jQuery('.buildBack').click(function() {
   var whichTabs = getTabs(0);
-tabSelect(buildTabs[whichTabs.current])
+  tabSelect(buildTabs[whichTabs.current])
   // console.log('current tab = ' + buildTabs[whichTabs.current] + ' previous tab = ' + buildTabs[whichTabs.previous]);
-  jQuery(buildTabs[whichTabs.previous]).hide();
-  jQuery(buildTabs[whichTabs.current]).show();
+  
+  tabShowHide(buildTabs[whichTabs.previous], buildTabs[whichTabs.current])
 });
-
-
 
 /******************
 * this function controlls the red bar and the active state of the tabs
@@ -42,8 +39,6 @@ tabSelect(buildTabs[whichTabs.current])
 *******************/
 function tabSelect(current) {
   jQuery('.buildTabControls .tabs-title').each(function() {
-    
-
     jQuery(this).children(".bottomBorder").children().remove();
     jQuery(this).removeClass('is-active');
     jQuery(this).children('a').attr('aria-selected', 'false');
@@ -87,4 +82,9 @@ function getTabs(direction) {
     'previous': preBuildTab
   }
   return curPrevObject;
+}
+
+function tabShowHide(previous, current){
+  jQuery(previous).hide();
+  jQuery(current).show();
 }
