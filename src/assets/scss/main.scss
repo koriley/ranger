@@ -250,6 +250,16 @@ body {
     font-family: $secondSiteFont;
 }
 
+a{
+  color:$firstAccentColor;
+  &:active,
+  &:focus,
+  &:hover,
+  &:visited {
+    color:rgba($firstAccentColor,.8);
+  }
+}
+
 .tabs-title > a{
   color:$firstFontColor;
   &:hover, &:active, &:visited, &:focus{
