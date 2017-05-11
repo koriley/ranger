@@ -1,5 +1,6 @@
 .swoop {
   height:518px;
+  
   .columns{
     padding:0;
   }
@@ -24,14 +25,14 @@
         }
         .clipMe{
 
-          clip-path: url("#rightClip");
-          // clip-path: polygon(28.4% 0%, 100% 0%, 100% 100%, 0% 100%);
+           clip-path: url("#rightClip");
+           clip-path: polygon(28.4% 0%, 100% 0%, 100% 100%, 0% 100%);
           height:518px;
           @include breakpoint(small only) {
               clip-path: none;
           }
         }
-    }
+     }
 
     .left {
         h1 {
@@ -56,11 +57,10 @@
             }
         }
         .clipMe{
-          clip-path: url("#leftClip");
-          // clip-path: polygon(0% 0%, 71.5% 0%, 100% 100%, 0% 100%);
+            clip-path: url("#leftClip");
+           clip-path: polygon(0% 0%, 71.5% 0%, 100% 100%, 0% 100%);
           height:518px;
-          position: relative;
-          z-index: 500;
+          
           // border:1px solid red;
           @include breakpoint(small only) {
               clip-path: none;

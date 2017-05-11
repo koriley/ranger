@@ -33,9 +33,11 @@
   custom jQuery function to animate the sliding and unsliding of the menu dropdown. Can be used for other
   elements that need a smooth fade dropdown effect.
   ***************/
+  (function(){
   jQuery.fn.slideFadeToggle = function (speed, easing, callback) {
     return this.animate({
       opacity: 'toggle',
       height: 'toggle'
     }, speed, easing, callback);
-  };
+  }
+}(jQuery));
