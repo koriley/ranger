@@ -13,6 +13,12 @@
     top: 109px;
     left: 0;
     z-index: 500;
+    @include breakpoint(medium down) {
+      top: 0;
+    
+      padding: 0;
+      margin: 0;
+    }
 
     .breadCrumb {
       float: left;
@@ -102,6 +108,40 @@
 
           li {}
         }
+      }
+    }
+
+    .mobileSegmentNav {
+      font-size: 26px;
+      line-height: 35px;
+      display: inline-block;
+      text-transform: uppercase;
+      width: 100%;
+
+      span {
+        line-height: 75px;
+      }
+
+      .currentLocation {
+        text-align: center;
+        height: 100%;
+        vertical-align: middle;
+        padding: 0;
+        display: inline-block;
+         width:100%;
+        
+        &::after{
+         @include css-triangle(10px, #ffffff, "down");
+          display:inline-block;
+          vertical-align: middle;
+          margin-left:10px;
+        }
+      }
+      .navDownArrow {
+        display: inline-block;
+        border:1px solid green;
+        
+      
       }
     }
   }
