@@ -1,7 +1,7 @@
 @import 'rangerThemeVars';
 
-.item{
-    cursor: pointer;
+.item {
+  cursor: pointer;
 }
 
 .navOutterContainer {
@@ -36,7 +36,7 @@
       background: $secondColor;
       width: 100%;
       margin: 0;
-      padding: 20px 15px 20px 15px;
+      padding: 20px 15px;
 
       .columns {
         padding: 0;
@@ -50,14 +50,14 @@
       //height: 108px;
       background: $secondColor;
       padding: 0;
-      padding-top:0px;
+
       img {
         max-width: 180px;
-        padding:10px;
+        padding: 10px;
         text-align: center;
         @include breakpoint(medium only) {
-            padding-top: 26px;
-            width: 120px;
+          padding-top: 26px;
+          width: 120px;
         }
       }
     }
@@ -145,33 +145,36 @@
 }
 
 .dropdown.menu > li.is-dropdown-submenu-parent > a {
-    background: $firstAccentColor;
-    color: $white;
-    text-transform: uppercase;
-    font-size: 12px;
-    padding: 15px;
+  background: $firstAccentColor;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 15px;
 }
 
 .dropdown {
-    li a {
-        line-height: 10px;
-        font-size: 13px;
-        border: none;
-        color: $white;
-        background: $black;
-    }
-}
-.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-    right: 15px;
-    border-color: #ffffff transparent transparent;
-}
-.dropdown.menu > li.is-dropdown-submenu-parent > a {
-    padding-right: 38px;
-}
-.is-dropdown-submenu {
+  li a {
+    line-height: 10px;
+    font-size: 13px;
+    border: none;
+    color: $white;
     background: $black;
-    border:none;
-    font-family: $secondSiteFont;
+  }
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  right: 15px;
+  border-color: #ffffff transparent transparent;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a {
+  padding-right: 38px;
+}
+
+.is-dropdown-submenu {
+  background: $black;
+  border: none;
+  font-family: $secondSiteFont;
 }
 // this is segment 'glass' sub menu css
 
@@ -186,26 +189,16 @@
   right: 0;
   color: $firstFontColor;
   padding: 10px 15px;
-
-  h1 {
-    font-family: $mainSiteFont;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 27px;
-    padding-bottom: 0;
-    margin-bottom: 0;
+  @include breakpoint(medium down) {
+    top: 75px;
+    width: 210px;
   }
 
-  h4 {
-    font-family: $mainSiteFont;
-    font-size: 16px;
-    line-height: 21px;
+  h6 {
     color: $secondFontColor;
-    font-style: italic;
-    padding-bottom: 20px;
   }
 
-  h3 {
+  .basicText {
     font-family: $mainSiteFont;
     color: $firstFontColor;
     font-size: 13px;
@@ -213,16 +206,20 @@
     line-height: 18px;
     padding: 0;
     margin: 0;
+    text-transform: uppercase;
   }
 
-  h2 {
+  .price {
     font-family: $mainSiteFont;
     font-size: 30px;
     font-weight: 600;
     line-height: 15px;
     padding: 0;
     margin: 0;
-
+    &::before{
+      content: "\A";
+      white-space: pre;
+    }
     span {
       font-family: $mainSiteFont;
       color: $firstFontColor;
@@ -251,7 +248,7 @@
 
   .title-bar {
     text-align: left;
-    padding: 0px;
+    padding: 0;
 
     .title-bar-title {
       margin-top: -5px;
@@ -268,7 +265,7 @@
   .mobileSelector {
     width: 100%;
     height: 100vh;
-    padding: 0px;
+    padding: 0;
     color: $firstFontColor;
     position: absolute;
     top: 60px;
@@ -276,13 +273,45 @@
     background: $mainColor;
   }
 }
+
 .menu-icon {
-    //padding: 16px;
-    width: 26px;
-    height:6px;
+  //padding: 16px;
+  width: 26px;
+  height: 6px;
 }
+
 .title-bar-right {
-    border-left: 2px solid $secondAccentColor;
-    height:60px;
-    padding: 10px 15px 10px 15px;
+  border-left: 2px solid $secondAccentColor;
+  height: 60px;
+  padding: 10px 15px;
+}
+
+//mobile glass menu
+
+.mobileGlass{
+  width:100%;
+  display:none;
+  position:absolute;
+  top:75px;
+  z-index:2002;
+  background: rgba(0,0,0,.8);
+  ul{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+    li{
+      padding:25px;
+      border-bottom:1px solid $secondFontColor;
+      text-align:center;
+      font-family:$mainSiteFont;
+      text-transform: uppercase;
+      font-size:25px;
+      a{
+        color:$firstFontColor;
+        &:hover &:active &:focus {
+        color:$firstFontColor;
+        }
+      }
+    }
+  }
 }

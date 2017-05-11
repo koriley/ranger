@@ -23,3 +23,9 @@ var url = window.location;
       }
    });
  }
+ 
+ jQuery('.mobileSegmentNav').on("click touchstart", function(event){
+   event.stopPropagation();
+   event.preventDefault();
+   jQuery('.mobileGlass').toggle();
+ });
