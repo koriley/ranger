@@ -3,19 +3,19 @@
   margin: auto;
 
   .glass {
-    height: 73px;
+    height: 74px;
     width: 100%;
     background: rgba(255,255,255,0.1);
     color: $firstFontColor;
-    font-family: $mainSiteFont;
+    font-family: $secondaryHeader;
     padding-left: 25px;
     position: absolute;
-    top: 109px;
+    top: 108px;
     left: 0;
     z-index: 500;
     @include breakpoint(medium down) {
       top: 0;
-    
+
       padding: 0;
       margin: 0;
     }
@@ -38,17 +38,19 @@
         }
       }
 
-      h4 {
+      a {
         height: 17px;
-        font-family: "open sans";
+        font-family: "lato";
         font-size: 12px;
         line-height: 17px;
-        // padding: 5px 5px;
+        color: #9F9F9F;
+        text-transform: capitalize;
+        padding: 10px 0px 5px 0px;
         display: inline-block;
 
         &::after {
           content: ">";
-          padding: 5px 10px;
+          padding: 5px 8px;
         }
       }
     }
@@ -74,7 +76,7 @@
         }
 
         .pageTitle {
-          margin-top: -2px;
+          margin-top: 0px;
           text-transform: uppercase;
           float: left;
           display: inline-block;
@@ -84,10 +86,10 @@
               background: rgba(0,0,0,.5);
             }
             color: $firstFontColor;
-            padding: 28px;
-            font-family: $mainSiteFont;
+            padding: 27px;
+            font-family: $secondaryHeader;
             font-size: 14px;
-            line-height: 19px;
+            line-height: 20px;
             display: block;
 
             &:hover &:active &:focus {
@@ -126,12 +128,12 @@
         text-align: center;
         height: 100%;
         vertical-align: middle;
-        padding: 0;
-        display: inline-block;
+        padding: 25px;
+        //display: inline-block;
          width:100%;
-        
-        &::after{
-         @include css-triangle(10px, #ffffff, "down");
+
+        h5::after{
+         @include css-triangle(5px, #ffffff, "down");
           display:inline-block;
           vertical-align: middle;
           margin-left:10px;
@@ -140,8 +142,6 @@
       .navDownArrow {
         display: inline-block;
         border:1px solid green;
-        
-      
       }
     }
   }
