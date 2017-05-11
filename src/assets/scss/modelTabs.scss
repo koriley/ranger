@@ -40,12 +40,13 @@
   }
 
 }
-$modelContainerColor:#1E1E1E;
+$modelContainerColor:#1A1A1A;
 $modelTitleColor:#8a8a8a;
 $borderColor: #292929;
 .tabContentContainer{
   background:$modelContainerColor;
   padding:25px 0 25px 0;
+  text-align: left;
   h1{
     //height:21px;
     color:$firstFontColor;
@@ -57,13 +58,15 @@ $borderColor: #292929;
     padding-bottom:38px;
   }
   h2{
-    height:21px;
+    //height:21px;
     color:$firstFontColor;
     font-family: $mainSiteFont;
     font-size:16px;
     font-weight:600px;
-    line-height:21px;
+    padding-bottom: 10px;
+    line-height:18px;
     text-transform: uppercase;
+    text-align: left;
 
   }
   .small{
@@ -71,6 +74,7 @@ $borderColor: #292929;
     font-size:15px;
     line-height:25px;
     color: $secondFontColor;
+    text-align: left;
   }
 
 }
@@ -83,17 +87,21 @@ table {
         tr {
             border: 0;
 
+            &:nth-child(odd) {
+                background-color: #232323;
+            }
             &:nth-child(even) {
-                background-color: $secondColor;
+                background-color: transparent;
             }
 
             td {
+                text-align: left;
 
                 span{
                 font-family: $secondSiteFont;
                 color:$secondFontColor;
                 font-size:14px;
-                line-height:40px;
+                line-height:20px;
                 text-transform: capitalize;
               }
             }
