@@ -181,27 +181,33 @@
 .floatingModelPriceBlock {
   float: right;
   width: 289px;
-  height: 218px;
+ // height: 218px;
   background: $mainColor;
   position: absolute;
   top: 182px;
   z-index: 5;
   right: 0;
   color: $firstFontColor;
-  padding: 10px 15px;
+  padding: 18px;
   @include breakpoint(medium down) {
     top: 75px;
     width: 210px;
   }
+  h4 {
+      margin-bottom: 0;
+  }
 
   h6 {
     color: $secondFontColor;
+    font-family: $secondaryHeader;
+    text-transform: capitalize;
+    margin-bottom: 16px;
   }
 
   .basicText {
-    font-family: $mainSiteFont;
-    color: $firstFontColor;
-    font-size: 13px;
+    font-family: $secondaryHeader;
+    color: $secondFontColor;
+    font-size: 14px;
     font-weight: 200;
     line-height: 18px;
     padding: 0;
@@ -221,11 +227,13 @@
       white-space: pre;
     }
     span {
-      font-family: $mainSiteFont;
+      font-family: $secondaryHeader;
       color: $firstFontColor;
-      font-size: 13px;
+      font-size: 16px;
       font-weight: 200;
       line-height: 46px;
+      text-transform: uppercase;
+      padding-left: 4px;
     }
   }
 
