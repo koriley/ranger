@@ -1,0 +1,44 @@
+.formContainer {
+  width: 100%;
+  height: 100px;
+  background: $secondAccentColor;
+
+  span {
+    line-height: 100px;
+  }
+
+  .middlePush {
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+
+    .formElements {
+      //  border: 1px solid red;
+       display: inline-block;
+       width:25%;
+       vertical-align: top;
+       .labelBounce{
+         text-align:left;
+         width:100%;
+         span{
+           color:white;
+          //  padding-bottom:225px;
+          //  border:1px solid red;
+           top:34px;
+         }
+       }
+       .fakeLabel{
+         text-align: left;
+         color:white;
+         text-transform: uppercase;
+         font-family: $mainSiteFont;
+         font-size:18px;
+       }
+       input{
+         
+       }
+    }
+  }
+}
