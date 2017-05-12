@@ -14,7 +14,8 @@ require([
     'modelPage',
     'catalogForm',
     'videoHook',
-    'buildProcess'
+    'buildProcess',
+    'googleMap'
 ], function(app, header, heroSlide) {
     //since these components don't need to be told to run, there is no callback function defined.
 
