@@ -268,7 +268,11 @@ a{
     &:hover,
     &:visited {
         background-color: $firstAccentColor;
+        }
     }
+.button, .without-arrow{
+    padding: 0px;
+    background-image: none;
 }
 
 .tabs-content{

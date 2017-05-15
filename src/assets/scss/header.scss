@@ -190,8 +190,9 @@
   color: $firstFontColor;
   padding: 18px;
   @include breakpoint(medium down) {
+    text-align: center;
     top: 75px;
-    width: 210px;
+    width: 100%;
   }
   h4 {
       margin-bottom: 0;
