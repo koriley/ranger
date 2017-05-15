@@ -187,57 +187,6 @@
 
 
 
-.mainSiteColor {
-    background: $mainColor;
-}
-
-.secondSiteColor {
-    background: $secondColor;
-}
-
-.thirdSiteColor {
-    background: $thirdColor;
-}
-
-.firstAccentColor {
-    background: $firstAccentColor;
-}
-
-.secondAccentColor {
-    background: $secondAccentColor;
-}
-
-.firstFontColor {
-    color: $firstFontColor;
-}
-
-.secondFontColor {
-    color: $secondFontColor;
-}
-
-.mainFont {
-    font-family: $mainSiteFont;
-}
-
-.secondFont {
-    font-family: $secondSiteFont;
-}
-
-.mainSiteWidth {
-    max-width: $mainSiteWidth;
-}
-
-.largeBreakpoint {
-    max-width: #{map-get($breakpoints, large)};
-}
-
-.mediumBreakpoint {
-    max-width: #{map-get($breakpoints, medium)};
-}
-
-.smallBreakpoint {
-    max-width: #{map-get($breakpoints, small)};
-}
 
 * {
     // font-family: $rangerFont !important;
