@@ -49,12 +49,12 @@ jQuery(document).on('open.zf.reveal', '[data-reveal]', function() {
   jQuery(this).append("<div id='" + ytId + "_thePlayer'></div>");
   
   var newWidth = fluidEl.width();
-  if(newWidth > 560){
-    newWidth = 560;
+  if(newWidth > 1080){
+    newWidth = 1080;
   }
   var newHeight = newWidth * aspect;
-  console.log("new width ="+newWidth+" old ="+width);
-  console.log("new height ="+newHeight+" old ="+height);
+  // console.log("new width ="+newWidth+" old ="+width);
+  // console.log("new height ="+newHeight+" old ="+height);
   player = new YT.Player(ytId + '_thePlayer', {
     height: newHeight,
     width: newWidth,
@@ -63,6 +63,8 @@ jQuery(document).on('open.zf.reveal', '[data-reveal]', function() {
       'onReady': onPlayerReady
     }
   });
+  jQuery('.reveal').width(newWidth);
+  jQuery('.reveal').height(newHeight);
 });
 
 jQuery(document).on('closed.zf.reveal', '[data-reveal]', function() {
