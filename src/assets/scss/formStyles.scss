@@ -1,0 +1,83 @@
+input {
+    padding-left: 15px;
+    border: 0;
+    border-bottom: 1px solid $secondFontColor;
+    background-color: transparent;
+    color: $secondFontColor;
+    width: 100%;
+    font-family: $mainSiteFont;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+
+    &:focus {
+        border: 0;
+        border-bottom: 1px solid $secondFontColor;
+        background-color: transparent;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+
+ select {
+  background: transparent;
+  border: none;
+  font-size: 10px;
+  height: 29px;
+  padding: 5px;
+  /* If you add too much padding here, the options won't show in IE */
+  width: 268px;
+  border-bottom: 1px solid $secondFontColor;
+  font-size: 16px;
+  height: 34px;
+  width: 268px;
+  color:white;
+  font-family:$mainSiteFont;
+  text-transform:uppercase;
+  outline: none;
+  &:focus{
+    box-shadow:none;
+    outline:none;
+    border:0px;
+    border-bottom: 1px solid $secondFontColor;
+    background-color:transparent;
+  }
+  
+}
+
+.labelBounce {
+  display: block;
+  height: 60px;
+  overflow: auto;
+  position: relative;
+  display: inline-block;
+  width: 45%;
+
+  label {
+    color: $secondFontColor;
+  }
+
+  input {
+    position: absolute;
+    bottom: 0;
+  }
+
+  > span {
+    color: $secondFontColor;
+    // transition: top 1s ease;
+    position: absolute;
+    font-family: $mainSiteFont;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+    // border:1px solid red;
+    top: 36px;
+  }
+
+  input:focus ~ span {
+    // top: 0;
+  }
+}
+
+

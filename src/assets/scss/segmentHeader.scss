@@ -24,10 +24,11 @@
       float: left;
 
       .currentLocation {
-        h1 {
+        .glassTitle {
           font-size: 26px;
           line-height: 35px;
           display: inline-block;
+          text-transform: uppercase;
         }
 
         .dropNav div::after {

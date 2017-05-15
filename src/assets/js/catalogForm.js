@@ -20,14 +20,16 @@ jQuery('label').each(function(){
 
 jQuery('input, span').on('touchstart click', function(){
   var whatElement = jQuery(this);
-  // console.log(whatElement.context.localName);
-  if(whatElement.context.localName === 'span'){
+  //  console.log(whatElement[0].tagName);
+  if(whatElement[0].tagName == 'SPAN'){
+  
     jQuery(this).siblings('input').focus();
     jQuery(this).animate({
         top:'15px'
     },300);
   }
-  if(whatElement.context.localName ==='input'){
+  if(whatElement[0].tagName ==='INPUT'){
+  
     var sib = jQuery(this).siblings("span");
     jQuery(sib).animate({
         top:'15px'
@@ -39,6 +41,7 @@ jQuery('input, span').on('touchstart click', function(){
 jQuery('input').on("blur", function(){
   var val = jQuery(this).val()
   var sib = jQuery(this).siblings("span");
+  
   // console.log(jQuery(sib).html());
   if(!val){
     jQuery(sib).animate({

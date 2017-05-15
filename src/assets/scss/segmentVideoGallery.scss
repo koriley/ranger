@@ -86,7 +86,11 @@ $videoTitleColor:#8a8a8a;
 .reveal{
   border:0px;
   background:$borderColor;
+  top:0px !important;
   .close-button{
     color:$firstAccentColor;
+  }
+  @include breakpoint(small) {
+  background:transparent;
   }
 }
