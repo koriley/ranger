@@ -70,6 +70,7 @@ This is the click state for the main nav
 jQuery(".dropNav").on("click touchstart", function(event) {
 
   if (menuOpen == 1) {
+    resetMenu(".mainNav");
     jQuery('.selectorDrop').slideFadeToggle();
     menuOpen = 0;
   }
@@ -97,12 +98,12 @@ jQuery(".dropNav").on("click touchstart", function(event) {
   /******************
     initiates a reset on the menu because nothing is in an active state.
   ******************/
-  // if (newSelectedMenuItem === oldSelectedMenuItem) {
-  //   selectedMenuValue = 0;
-  //   //resetMenu(this);
-  // 
-  //   // jQuery('.selectorDrop').hide();
-  // }
+  if (newSelectedMenuItem === oldSelectedMenuItem) {
+    selectedMenuValue = 0;
+    //resetMenu(this);
+  
+    // jQuery('.selectorDrop').hide();
+  }
   /******************
   initial click on a menu setting up the current item as the active state. this will change if other elements are selected.
   Happens in the next if/
@@ -142,7 +143,7 @@ jQuery(".dropNav").on("click touchstart", function(event) {
 //close the menu if you click anywhere else on the page and the menu is open.
 jQuery("html").not('.dropNav').on("touchstart click", function() {
   if (menuOpen == 1) {
-
+resetMenu(".mainNav");
     jQuery('.selectorDrop').slideFadeToggle();
     menuOpen = 0;
   }
@@ -152,13 +153,17 @@ jQuery("html").not('.dropNav').on("touchstart click", function() {
 jQuery('.mobileMenuCall').on('touchstart click', function(e) {
   e.stopPropagation();
   e.preventDefault();
+  //hide any glass menus that are open.
+  jQuery('.mobileGlass').hide();
+  //collapse any accordians that are open.
   jQuery(".mobileSelector ul.menu").foundation('hideAll');
+  //hide the menu.
   jQuery('.mobileSelector').slideFadeToggle();
 });
 
 //nav segemnt selector click
 jQuery('.navSegmentSelector a').on('touchstart click', function(e) {
-  
+
   e.stopPropagation();
   e.preventDefault();
   var segment = jQuery(this).attr('href');

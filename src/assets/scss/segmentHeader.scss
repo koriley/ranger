@@ -14,7 +14,7 @@
     left: 0;
     z-index: 500;
     @include breakpoint(medium down) {
-      top: 0;
+      top: 0px;
 
       padding: 0;
       margin: 0;
