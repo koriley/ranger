@@ -18,7 +18,7 @@ var url = window.location;
       var selected = jQuery(this).children("a").attr("href");
       
       if(selected === url.pathname){
-        // console.log("winner;");
+        
         jQuery(this).addClass("is-active").children("a").attr("aria-selected", "true");
       }
    });
@@ -27,5 +27,5 @@ var url = window.location;
  jQuery('.mobileSegmentNav').on("click touchstart", function(event){
    event.stopPropagation();
    event.preventDefault();
-   jQuery('.mobileGlass').toggle();
+   jQuery('.mobileGlass').slideFadeToggle();
  });

@@ -12,7 +12,7 @@ require([
     'newsCarousel',
     'segmentAllModels',
     'modelPage',
-    'catalogForm',
+    'formJavascript',
     'videoHook',
     'buildProcess',
     'googleMap'
