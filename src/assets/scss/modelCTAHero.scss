@@ -1,133 +1,52 @@
-.heroContainer {
-    position: relative;
 
-    .short{
-      height:350px !important;
+
+  .short {
+    height: 350px !important;
+  }
+
+  .bw {
+    filter:grayscale(100%) !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  .backgroundHero {
+    width: 100%;
+    height: 800px;
+  }
+
+  .bump {
+    margin-top: 5%;
+  }
+
+  .overImage {
+    width:100%;
+    
+
+    .subHead {
+      font-family: $secondaryHeader;
+      color: $firstFontColor;
+      font-size: 18px;
+      line-height: 25px;
+      font-style: normal;
+      //text-shadow: 1px 1px 0.2px gray;
+      margin-left: 25px;
+      margin-top: -10px;
+      text-transform: capitalize;
     }
-    .bw{
-      filter:grayscale(100%) !important;
-      background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    }
-    .backgroundHero {
-        width: 100%;
-        height: 800px;
-        // margin-top: 25px;
-      
-    }
-    .bump{
-      margin-top:5%;
+
+    hr {
+      margin-left: 25px;
     }
 
-    .overImage {
-        position: absolute;
-        top: 25px;
-        //  border: 1px solid red;
-        z-index: 5000;
-
-        h1 {
-            padding: 25px 0 0 25px;
-            font-size: 48px;
-            font-weight: 600;
-            line-height: 65px;
-            font-style: normal;
-            font-family: $mainSiteFont;
-            //text-shadow: 1px 1px 1px gray;
-        }
-
-        h4 {
-            font-family: $secondaryHeader;
-            color: $firstFontColor;
-            font-size: 18px;
-            line-height: 25px;
-            font-style: normal;
-            //text-shadow: 1px 1px 0.2px gray;
-            margin-left: 25px;
-            margin-top: -10px;
-            text-transform: capitalize;
-        }
-
-        hr {
-            margin-left: 25px;
-        }
-
-        .dek {
-            text-align: left;
-            color: $firstFontColor;
-            font-family: $secondSiteFont;
-            font-size: 15px;
-            line-height: 25px;
-            max-width: 400px;
-            margin-top: 60px;
-            margin-left: 25px;
-            //text-shadow: 1px 1px 0.2px gray;
-        }
-
-        .floatingHeroModelPriceBlock {
-
-            width: 289px;
-            height: 218px;
-            background: $mainColor;
-            color: $firstFontColor;
-            margin:25px 0px 0px 95%;
-
-            h1 {
-                font-family: $mainSiteFont;
-                font-size: 20px;
-                font-weight: 600;
-                line-height: 27px;
-                padding:10px 0px 0px 10px;
-                margin:0;
-                text-shadow: none;
-            }
-            h4 {
-                font-family: $mainSiteFont;
-                font-size: 16px;
-                line-height: 21px;
-                color: $secondFontColor;
-                font-style: italic;
-                padding:0 0 25px 15px;
-                margin:0px;
-                text-shadow: none;
-            }
-            h3 {
-                font-family: $mainSiteFont;
-                color: $firstFontColor;
-                font-size: 13px;
-                font-weight: 200;
-                line-height: 18px;
-                padding:0 0 0px 15px;
-                margin: 0;
-            }
-
-            h2 {
-                font-family: $mainSiteFont;
-                font-size: 30px;
-                font-weight: 600;
-                line-height: 15px;
-                padding:0 0 0px 15px;
-                margin: 0;
-
-                span {
-                    font-family: $mainSiteFont;
-                    color: $firstFontColor;
-                    font-size: 13px;
-                    font-weight: 200;
-                    line-height: 46px;
-                }
-            }
-
-
-            .ctaButton {
-                margin: auto;
-                width: 95%;
-                text-align: center;
-                background-image: none;
-                font-size: 14px;
-                text-transform: uppercase;
-                font-family: $mainSiteFont;
-                color: $firstFontColor;
-                margin-top: 10px;
-            }
-        }
+    .bodyText {
+      text-align: left;
+      color: $firstFontColor;
+      font-family: $secondSiteFont;
+      font-size: 15px;
+      line-height: 25px;
+      max-width: 400px;
+      margin-top: 60px;
+      margin-left: 25px;
+      //text-shadow: 1px 1px 0.2px gray;
     }
-}
+  }
