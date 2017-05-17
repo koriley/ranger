@@ -2,18 +2,19 @@
     <div class=" large-12 small-12 medium-12 columns">
         <div class="heroContainer">
             <div class="backgroundHero" style="background-image: url('/assets/img/3layerBackground.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            </div>
+            
             <div class="row">
-                <div class="large-12 medium-12 small-12 columns">
-                    <div class="proQuote">
-                        "Time is a companion that goes with us on a journey. It reminds us to cherish each moment, because it will never come again. What we leave behind is not as important as how we have lived."
+                <div class="large-8 medium-8 small-8 large-centered small-centered medium-centered columns" >
+                    <div class="proQuote center">
+                        <h2>"Time is a companion that goes with us on a journey. It reminds us to cherish each moment, because it will never come again. What we leave behind is not as important as how we have lived."</h2>
                         <div class="proPhoto">
                             <img src="/assets/img/Picard2379.jpg" alt="">
                         </div>
-                        <h1>Captain Jean-Luc Picard</h1>
-                        <h4>captain of the starship enterprise </h4>
+                        <h5>Captain Jean-Luc Picard</h5>
+                        <h6>captain of the starship enterprise </h6>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>
@@ -56,15 +57,35 @@
             <h1>video reviews</h1>
             <div class="reviewContainer">
                 <div class="seriesVideos">
-                    <div class="video">
-
-                    </div>
+                  <div class="galleryImage responsive-embed">
+                      <a data-open="videoModal2"><img src="/assets/img/vidExample2.jpg" alt=""></a>
+                      <!-- make the modall name somethine that can be authored, maybe a spaceless version of title? -->
+                      
+                      <div class="reveal vidPlayer" id="videoModal2" data-reveal>
+                      
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/EJbJzMCWSDc" frameborder="0" allowfullscreen></iframe>
+                      
+                          <button class="close-button" data-close aria-label="Close reveal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                  </div>
                     <h4>This is the Video Title</h4>
                 </div>
                 <div class="seriesVideos">
-                    <div class="video">
-
-                    </div>
+                  <div class="galleryImage responsive-embed">
+                      <a data-open="videoModal1"><img src="/assets/img/vidExample.jpg" alt=""></a>
+                      <!-- make the modall name somethine that can be authored, maybe a spaceless version of title? -->
+                      
+                      <div class="reveal vidPlayer" id="videoModal1" data-reveal>
+                        
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/e8Q8PYW5mkM" frameborder="0" allowfullscreen></iframe>
+                      
+                          <button class="close-button" data-close aria-label="Close reveal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                  </div>
                     <h4>This is the Video Title</h4>
                 </div>
                 <div class="seriesVideos">
