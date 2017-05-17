@@ -33,7 +33,9 @@ PATHS:
     # Libraries required by Foundation
     - "bower_components/jquery/dist/jquery.js"
     - "bower_components/what-input/dist/what-input.js"
-    - "bower_components/lightgallery/src/js/lightgallery.js"  
+    - "bower_components/lightgallery/src/js/lightgallery.js" 
+    - "bower_components/lg-zoom/src/lg-zoom.js" 
+    - "bower_components/lg-thumbnail/src/lg-thumbnail.js"  
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"
