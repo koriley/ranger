@@ -17,30 +17,50 @@
     height: 100px;
     width: 100%;
     position: absolute;
-    bottom: 200px;
+    @include breakpoint(small) {
+        bottom:40px;
+    }
+    @include breakpoint(medium) {
+        bottom:100px;
+    }
+    @include breakpoint(large) {
+        bottom:200px;
+    }
 
     .modelPrev {
         color: white;
         cursor: pointer;
-        width: 53px;
-        height: 53px;
         background: url('/assets/img/white-arrow-button.svg');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 50%;
         float: right;
+        @include breakpoint(small) {
+            width: 35px;
+            height:35px;
+        }
+        @include breakpoint(large) {
+            width: 53px;
+            height: 53px;
+        }
     }
 
     .modelNext {
         color: white;
         cursor: pointer;
-        width: 53px;
-        height: 53px;
         background: url('/assets/img/white-arrow-button.svg');
         transform: rotate(180deg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 50%;
         float: left;
+        @include breakpoint(small) {
+            width: 35px;
+            height:35px;
+        }
+        @include breakpoint(large) {
+            width: 53px;
+            height: 53px;
+        }
     }
 }

@@ -116,12 +116,11 @@ table {
     padding:20px;
     margin:0px;
     border-top:1px solid $borderColor;
-    border-bottom:1px solid $borderColor;
     &:first-child{
       border-top:0px;
     }
     a{
-
+      text-align: left;
       height:21px;
       color:$firstFontColor;
       font-family: $mainSiteFont;
@@ -139,9 +138,11 @@ table {
     }
     ul{
       list-style: none;
-      padding:20px 10px 20px 10px;
+      padding:20px 0px 0px 0px;
+      margin:0;
 
       li{
+        text-align: left;
         font-family: $secondSiteFont;
         color:$secondFontColor;
         font-size:14px;

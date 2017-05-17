@@ -1,6 +1,6 @@
 .heroContainer {
     position: relative;
-                
+
     .short{
       height:350px !important;
     }
@@ -33,16 +33,16 @@
             line-height: 65px;
             font-style: normal;
             font-family: $mainSiteFont;
-            text-shadow: 1px 1px 1px gray;
+            //text-shadow: 1px 1px 1px gray;
         }
 
         h4 {
-            font-family: $mainSiteFont;
+            font-family: $secondaryHeader;
             color: $firstFontColor;
             font-size: 18px;
             line-height: 25px;
             font-style: normal;
-            text-shadow: 1px 1px 0.2px gray;
+            //text-shadow: 1px 1px 0.2px gray;
             margin-left: 25px;
             margin-top: -10px;
             text-transform: capitalize;
@@ -61,11 +61,11 @@
             max-width: 400px;
             margin-top: 60px;
             margin-left: 25px;
-            text-shadow: 1px 1px 0.2px gray;
+            //text-shadow: 1px 1px 0.2px gray;
         }
 
         .floatingHeroModelPriceBlock {
-          
+
             width: 289px;
             height: 218px;
             background: $mainColor;
@@ -117,7 +117,7 @@
                     line-height: 46px;
                 }
             }
-          
+
 
             .ctaButton {
                 margin: auto;
