@@ -101,7 +101,7 @@ jQuery(".dropNav").on("click touchstart", function(event) {
   if (newSelectedMenuItem === oldSelectedMenuItem) {
     selectedMenuValue = 0;
     //resetMenu(this);
-  
+
     // jQuery('.selectorDrop').hide();
   }
   /******************
@@ -143,7 +143,7 @@ jQuery(".dropNav").on("click touchstart", function(event) {
 //close the menu if you click anywhere else on the page and the menu is open.
 jQuery("html").not('.dropNav').on("touchstart click", function() {
   if (menuOpen == 1) {
-resetMenu(".mainNav");
+    resetMenu(".mainNav");
     jQuery('.selectorDrop').slideFadeToggle();
     menuOpen = 0;
   }
@@ -170,7 +170,6 @@ jQuery('.navSegmentSelector a').on('touchstart click', function(e) {
 
   jQuery(".selectorDrop").children().hide();
   jQuery(".selectorDrop").find("." + segment).show();
-  
 
 });
 

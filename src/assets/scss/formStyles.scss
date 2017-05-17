@@ -82,11 +82,11 @@ select {
 
 
 
-.Checkboxes {
+.checkboxes {
 	position: relative;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
 	display: block;
 	position: relative;
 	-webkit-appearance: none;
@@ -109,7 +109,7 @@ input[type=checkbox] {
 	line-height: 20px;
 }
 
-input[type=checkbox]::after {
+input[type="checkbox"]::after {
 	position: absolute;
 	
 	left: -5px;
@@ -131,30 +131,48 @@ input[type=checkbox]::after {
 	opacity: 0;
 }
 
-input[type=checkbox].Green::after {
-	color: #33CC00;
-	content: url("http://supermanic.com/prototypes/checkboxes/check_green.svg");
-}
 
-input[type=checkbox].Blue::after {
-	color: #0099FF;
-	content: url("http://supermanic.com/prototypes/checkboxes/check_blue.svg");
-}
 
-input[type=checkbox].Red::after {
+
+
+input[type="checkbox"].red::after {
 	color: #FF0033;
-	content: url("http://supermanic.com/prototypes/checkboxes/check_red.svg");
+	content: url("/assets/img/check_red.svg");
 }
 
-input[type=checkbox].Orange::after {
-	color: #FF6600;
-	content: url("http://supermanic.com/prototypes/checkboxes/check_orange.svg");
-}
 
-input[type=checkbox]:checked::after {
+
+input[type="checkbox"]:checked::after {
 	-webkit-transition-timing-function: cubic-bezier(0, 0, .5, 2), linear;
 	-webkit-transition-duration: 0.2s, 0.1s;
 	-webkit-transform: scale3d(1,1,1);
 	
 	opacity: 1;
+}
+
+
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    color:#f2f2f2;
+    
+    
+}
+
+input[type="radio"] + label::before {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url("../img/check_radio_sheet.png") -38px top no-repeat;
+    cursor:pointer;
+    content:"";
+}
+
+input[type="radio"]:checked + label::before {
+    background:url("../img/check_radio_sheet.png") -57px top no-repeat;
 }
