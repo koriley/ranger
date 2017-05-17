@@ -3,33 +3,23 @@
 //to relative so you can absolute position over the image.
 $borderColor: #292929;
 $bubbleColor: #232323;
-
+.backgroundHero{
+  position:relative;
+}
 .proQuote {
     width: 100%;
-    position: absolute;
-    top: 25%;
+     
+    // top: 25%;
     text-align: center;
-    max-width: 1200px;
-    margin: 0;
-    padding: 0;
-    font-family: $mainSiteFont;
-    color: $firstFontColor;
-    font-size: 40px;
-    line-height: 55px;
-
-    h1 {
-        font-size: 20px;
-        padding: 0;
-        margin: 0;
-        line-height: 27px;
-        font-family: $mainSiteFont;
-    }
-
-    h4 {
-        font-size: 16px;
+    // max-width: 1200px;
+  
+    
+    
+    
+    h6 {
+      
         color: $secondFontColor;
-        padding: 0;
-        margin: 0;
+        
     }
 }
 
