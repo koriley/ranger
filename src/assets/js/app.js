@@ -1,8 +1,8 @@
 
   jQuery(document).foundation();
-   
-  
-   
+
+
+
   /************************
   resets the height of element "responsibleClass" to the height of "item".
   reason: Absolute position elements dont work well with responsiveness since they
@@ -21,8 +21,8 @@
     jQuery(responsibleClass).height(newHeight);
     return newHeight;
   }
-  
-  
+
+
   function responsibleWidth(item, responsibleClass) {
     var newWidth = jQuery(item).width();
     jQuery(responsibleClass).width(newWidth);
