@@ -55,3 +55,17 @@ $footerTextColorSub:#707070;
     }
   }
 }
+.copyright {
+    padding: 15px 0 6px 0;
+    p {
+        color: #4A4A4A;
+        font-size: 11px;
+    }
+    a {
+        font-size: 11px;
+        color: #4A4A4A;
+        padding: 0 10px 0 10px;
+        border-right: solid 1px #4A4A4A;
+        line-height: 0;
+    }
+}
