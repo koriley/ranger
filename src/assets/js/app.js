@@ -1,5 +1,5 @@
 
-  $(document).foundation();
+  jQuery(document).foundation();
    
   
    
@@ -41,3 +41,33 @@
     }, speed, easing, callback);
   }
 }(jQuery));
+
+jQuery(function() {
+   jQuery("#lightgallery").lightGallery({
+       selector: '.gallery-item',
+       thumbnail:true,
+       animateThumb:true,
+       mode: 'lg-fade',
+       cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)',
+       download:false,
+       escKey:false
+   });
+   jQuery('#custom-transitions').lightGallery({
+       mode: 'lg-fade'
+   })
+   jQuery('#video-gallery').lightGallery({
+       selector: '.gallery-item',
+       loadYoutubeThumbnail: true,
+       youtubeThumbSize: 'default',
+   });
+   jQuery('#video-thumbnails').lightGallery({
+       loadYoutubeThumbnail: true,
+       youtubeThumbSize: 'default',
+   });
+   jQuery('#aniimated-thumbnials').lightGallery({
+       thumbnail:true
+   });
+   jQuery('#captions').lightGallery({
+       subHtmlSelectorRelative: true
+   });
+});
