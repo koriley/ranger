@@ -1,0 +1,138 @@
+.bigHeroContainer {
+  height: 846px;
+}
+
+
+// position hero text in the center of the hero image
+.heroHorizontalCenterVerticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+  overflow: auto;
+  height: 846px;
+}
+
+.heroHorizontalRightVerticalCenter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  resize: both;
+  overflow: auto;
+  height: 846px;
+}
+
+.heroHorizontalLeftVerticalCenter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  resize: both;
+  overflow: auto;
+  height: 846px;
+}
+/////////////////////
+
+//position hero text at the top of the hero image
+.heroHorizontalCenterVerticalTop {
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+  resize: both;
+  overflow: auto;
+  height: 846px;
+}
+
+.heroHorizontalRightVerticalTop {
+  display: flex;
+  justify-content: flex-end;
+  // align-items: center;
+  flex-direction: row;
+  resize: both;
+  overflow: auto;
+  height: 846px;
+}
+
+.heroHorizontalLeftVerticalTop {
+  display: flex;
+  justify-content: flex-start;
+  //align-items: center;
+  flex-direction: row;
+  resize: both;
+  overflow: auto;
+  height: 846px;
+}
+
+///////////////////////
+
+//position hero text at the bottom of the hero image
+.heroHorizontalLeftVerticalBottom {
+  display: flex;
+  justify-content: flex-end;
+  
+  flex-direction: column;
+  resize: both;
+  overflow: auto;
+  height: 846px;
+}
+
+.heroHorizontalCenterVerticalBottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  resize: both;
+  overflow: auto;
+  height: 846px;
+}
+
+.heroHorizontalRightVerticalBottom {
+  display: flex;
+  justify-content: flex-end;
+  
+  flex-direction: row;
+  resize: both;
+  overflow: auto;
+  height: 846px;
+  .heroCopy{
+    margin-top:auto;
+  }
+}
+
+///////////////////
+.heroCopy {
+  display: inline-block;
+  max-width: 800px;
+  text-align: center;
+  resize: both;
+  padding: 10px;
+
+  hr {
+    margin-left: 25px;
+  }
+
+  .bodyText {
+    text-align: left;
+    color: $firstFontColor;
+    font-family: $secondSiteFont;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 400px;
+    margin-top: 60px;
+    margin-left: 25px;
+    //text-shadow: 1px 1px 0.2px gray;
+  }
+
+  .subHead {
+    font-family: $secondaryHeader;
+    color: $firstFontColor;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: normal;
+    //text-shadow: 1px 1px 0.2px gray;
+    margin-left: 25px;
+    margin-top: -10px;
+    text-transform: capitalize;
+  }
+}
