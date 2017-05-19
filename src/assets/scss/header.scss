@@ -3,6 +3,11 @@
 .item {
   cursor: pointer;
 }
+.currency-icon {
+    padding-right: 5px;
+    padding-bottom: 2px;
+    height: 15px;
+}
 
 .navOutterContainer {
   position: relative;
@@ -21,11 +26,6 @@
 
     .row {
       margin: auto;
-    }
-    .currency-icon {
-        padding-right: 5px;
-        padding-bottom: 2px;
-        height: 15px;
     }
   }
 
@@ -285,8 +285,36 @@ z-index:501;
     top: 60px;
     z-index: 501;
     background: $mainColor;
-  }
-}
+    .nested {
+        :hover {
+            background: #191919;
+        }
+    }
+    .nested li a {
+        padding-left: 15px;
+        font-weight: 400;
+        color: #9F9F9F;
+        font-family: $secondaryHeader;
+        line-height: 40px;
+        &:hover {
+            color: #ffffff;
+            }
+        }
+    }
+ }
+ .mobile-secondary {
+     background-color: #191919;
+     padding-top: 20px;
+     margin-right: 20px;
+     //border-top: 1px solid $dark-gray;
+     ul {
+         font-family: $secondaryHeader;
+         color: #9f9f9f;
+         text-transform: uppercase;
+         list-style: none;
+         line-height: 50px;
+     }
+ }
 
 .menu-icon {
   //padding: 16px;
@@ -297,7 +325,7 @@ z-index:501;
 .title-bar-right {
   border-left: 2px solid $secondAccentColor;
   height: 60px;
-  padding: 10px 15px;
+  padding: 10px 20px;
 }
 
 //mobile glass menu
