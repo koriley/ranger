@@ -1,6 +1,9 @@
 .bigHeroContainer {
   height: 846px;
 }
+.smallHeroContainer{
+  height:350px;
+}
 
 
 // position hero text in the center of the hero image
@@ -10,7 +13,7 @@
   align-items: center;
   resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 .heroHorizontalRightVerticalCenter {
@@ -20,7 +23,7 @@
   flex-direction: row;
   resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 .heroHorizontalLeftVerticalCenter {
@@ -30,7 +33,7 @@
   flex-direction: row;
   resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 /////////////////////
 
@@ -41,7 +44,7 @@
   //align-items: center;
   resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 .heroHorizontalRightVerticalTop {
@@ -51,7 +54,7 @@
   flex-direction: row;
   resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 .heroHorizontalLeftVerticalTop {
@@ -61,7 +64,7 @@
   flex-direction: row;
   resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 ///////////////////////
@@ -74,7 +77,7 @@
   flex-direction: column;
   resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 .heroHorizontalCenterVerticalBottom {
@@ -84,7 +87,7 @@
   flex-direction: column;
   resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 .heroHorizontalRightVerticalBottom {
@@ -94,7 +97,7 @@
   flex-direction: row;
   resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
   .heroCopy{
     margin-top:auto;
   }
