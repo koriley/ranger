@@ -83,3 +83,10 @@
 .segmentGroup ul li, .ownerGroup ul li {
     text-transform: capitalize;
 }
+.newItem{
+  color:$firstAccentColor;
+  text-transform: uppercase;
+  font-family: $secondSiteFont;
+  padding:10px;
+  
+}

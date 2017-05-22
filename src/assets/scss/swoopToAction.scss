@@ -85,9 +85,9 @@
   }
 }
 
-.swoopTextContainer{
-  height:inherit;
-  background:#000;
+.swoopTextContainer {
+  
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,32 +95,54 @@
   //resize: both;
   overflow: auto;
   height: inherit;
-  -webkit-flex-grow: 1;
-  .swoopText{
+  @include breakpoint(large) {
+    background: #000;
+  }
+  @include breakpoint(small) {
+    background: rgba(0,0,0,.5);
+  }
+
+  .swoopText {
     display: inline-block;
-    max-width:800px;
     text-align: left;
     //resize: both;
     padding: 10px;
-    border:1px solid blue;
-    
+    border: 1px solid blue;
+    @include breakpoint(large) {
+      max-width: 800px;
+    }
+    @include breakpoint(small) {
+      width: 100%;
+    }
   }
 }
-.swoopImageContainer{
-  height:inherit;
-  
-  border:1px solid green;
-  -webkit-flex-grow: 5;
+
+.swoopImageContainer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  //resize: both;
+  overflow: auto;
   height: inherit;
-  .swoopImage{
+
+  .swoopImage {
     display: inline-block;
     
     text-align: left;
+    //resize: both;
     
-    padding: 10px;
-    height:inherit;
-    padding:0px;
-    margin:0px;
-    
+    border: 1px solid blue;
+    @include breakpoint(large) {
+      width: 800px;
+      max-width: 800px;
+      padding: 10px;
+    }
+    @include breakpoint(small) {
+    width:0px;
+    height:0px;
+    padding: 0px;
+    }
   }
 }

@@ -24,13 +24,13 @@ select {
   border: none;
   font-size: 10px;
   height: 29px;
-  padding: 5px;
+  padding: 0px;
   /* If you add too much padding here, the options won't show in IE */
-  width: 268px;
-  border-bottom: 1px solid $secondFontColor;
+  width: 100%;
+  border-bottom: 1px solid rgba($secondFontColor,.3);
   font-size: 16px;
   height: 34px;
-  width: 268px;
+  
   color: white;
   font-family: $mainSiteFont;
   text-transform: uppercase;
@@ -51,7 +51,7 @@ select {
   overflow: auto;
   position: relative;
   display: inline-block;
-  width: 45%;
+  width: 100%;
 
   label {
     color: $secondFontColor;
@@ -79,7 +79,24 @@ select {
   }
 }
 
-
+input[type="text"] {
+  margin:0px;
+  padding:0px;
+  border:0px;
+  border-bottom:1px solid rgba($secondFontColor,.3);
+  background-color:transparent;
+  color:#fff;
+  &:focus{
+    margin:0px;
+    padding:0px;
+    border:0px;
+    border-bottom:1px solid #cacaca;
+    background-color:transparent;
+    color:#fff;
+    outline:none;
+    box-shadow:none;
+  }
+}
 
 
 .checkboxes {
@@ -175,4 +192,10 @@ input[type="radio"] + label::before {
 
 input[type="radio"]:checked + label::before {
     background:url("../img/check_radio_sheet.png") -57px top no-repeat;
+}
+
+.fakeLabel{
+  //used for select label
+  text-transform: uppercase;
+  font-family: $mainSiteFont;
 }
