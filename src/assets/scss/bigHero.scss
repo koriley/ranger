@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  resize: both;
+  // resize: both;
   overflow: auto;
   height: inherit;
 }
@@ -21,7 +21,7 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
-  resize: both;
+  // resize: both;
   overflow: auto;
   height: inherit;
 }
@@ -31,7 +31,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  resize: both;
+  // resize: both;
   overflow: auto;
   height: inherit;
 }
@@ -42,7 +42,7 @@
   display: flex;
   justify-content: center;
   //align-items: center;
-  resize: both;
+  // resize: both;
   overflow: auto;
   height: inherit;
 }
@@ -52,7 +52,7 @@
   justify-content: flex-end;
   // align-items: center;
   flex-direction: row;
-  resize: both;
+  // resize: both;
   overflow: auto;
   height: inherit;
 }
@@ -62,7 +62,7 @@
   justify-content: flex-start;
   //align-items: center;
   flex-direction: row;
-  resize: both;
+  // resize: both;
   overflow: auto;
   height: inherit;
 }
@@ -75,7 +75,7 @@
   justify-content: flex-end;
   
   flex-direction: column;
-  resize: both;
+  // resize: both;
   overflow: auto;
   height: inherit;
 }
@@ -85,7 +85,7 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  resize: both;
+  // resize: both;
   overflow: auto;
   height: inherit;
 }
@@ -95,7 +95,7 @@
   justify-content: flex-end;
   
   flex-direction: row;
-  resize: both;
+  // resize: both;
   overflow: auto;
   height: inherit;
   .heroCopy{
@@ -108,7 +108,7 @@
   display: inline-block;
   max-width: 800px;
   text-align: center;
-  resize: both;
+  // resize: both;
   padding: 10px;
 
   hr {
