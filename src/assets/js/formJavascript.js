@@ -2,7 +2,7 @@ jQuery('label').each(function(){
   var spanText = jQuery(this).html();
   var parent = jQuery(this).parent();
   var inputSibling = jQuery(this).siblings("input").attr("type");
-  if(inputSibling != 'checkbox'){
+  if(inputSibling == 'text'){
   jQuery(this).hide();
   jQuery(parent).append("<span>"+spanText+"</span>");
 }
