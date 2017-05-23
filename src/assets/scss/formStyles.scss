@@ -213,3 +213,19 @@ fieldset{
   border-top:1px solid rgba($secondFontColor,.3);
   padding:20px;
 }
+
+textarea  {
+  background:transparent;
+  border:0px;
+  border-bottom:1px solid rgba($secondFontColor,.3);
+  color:white;
+  font-family: $mainSiteFont;
+  &:focus{
+    background:transparent;
+    border:0px;
+    border-bottom:1px solid rgba($secondFontColor,.3);
+    color:white;
+    font-family: $mainSiteFont;
+    box-shadow: none;
+  }
+}
