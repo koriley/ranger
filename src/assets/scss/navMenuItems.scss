@@ -1,4 +1,4 @@
-.segmentGroup, .ownerGroup{
+.segmentGroup, .navDropColumnGroup{
   display: inline-block;
   vertical-align: top;
   width: 16.6666%;
@@ -74,9 +74,9 @@
   margin-top:55%;
 }
 
-.ownerContainer{
+.navDropColumnContainer{
   text-align:center;
-  .ownerGroup{
+  .navDropColumnGroup{
     text-align:left;
   }
 }

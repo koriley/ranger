@@ -2,7 +2,14 @@
   height: 846px;
 }
 .smallHeroContainer{
-  height:350px;
+  
+  
+  @include breakpoint(small) {
+    height:250px;
+  }
+  @include breakpoint(large) {
+    height:350px;
+  }
 }
 
 
