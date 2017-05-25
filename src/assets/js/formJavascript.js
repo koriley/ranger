@@ -18,7 +18,9 @@ jQuery('label').each(function(){
 //   })
 // });
 
-jQuery('input, span').on('touchstart click', function(){
+
+//on forms this will check if you have clicked, touched, or focused on a form. if so, animate the word to lift above the box.
+jQuery('input, span').on('touchstart click focus', function(){
   var whatElement = jQuery(this);
   //  console.log(whatElement[0].tagName);
   if(whatElement[0].tagName == 'SPAN'){
