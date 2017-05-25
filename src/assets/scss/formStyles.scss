@@ -24,13 +24,13 @@ select {
   border: none;
   font-size: 10px;
   height: 29px;
-  padding: 5px;
+  padding: 0px;
   /* If you add too much padding here, the options won't show in IE */
-  width: 268px;
-  border-bottom: 1px solid $secondFontColor;
+  width: 100%;
+  border-bottom: 1px solid rgba($secondFontColor,.3);
   font-size: 16px;
   height: 34px;
-  width: 268px;
+  
   color: white;
   font-family: $mainSiteFont;
   text-transform: uppercase;
@@ -51,7 +51,7 @@ select {
   overflow: auto;
   position: relative;
   display: inline-block;
-  width: 45%;
+  width: 100%;
 
   label {
     color: $secondFontColor;
@@ -79,33 +79,51 @@ select {
   }
 }
 
-
+input[type="text"] {
+  margin:0px;
+  padding:0px;
+  border:0px;
+  border-bottom:1px solid rgba($secondFontColor,.3);
+  background-color:transparent;
+  color:#fff;
+  &:focus{
+    margin:0px;
+    padding:0px;
+    border:0px;
+    border-bottom:1px solid #cacaca;
+    background-color:transparent;
+    color:#fff;
+    outline:none;
+    box-shadow:none;
+  }
+}
 
 
 .checkboxes {
 	position: relative;
 }
+.checkboxLabel{
+  display:inline-block; 
+  color:$secondFontColor;
+  font-family:$mainSiteFont;
+  font-size:20px;
+  text-transform:uppercase;
+}
 
 input[type="checkbox"] {
-	display: block;
+
+	display: inline-block;
 	position: relative;
 	-webkit-appearance: none;
 	border: none;
 	outline: none;
-	
-	margin: 0px auto;
-	margin-bottom: 20px;
-	
+	margin:0px 5px;
 	width: 20px;
 	height: 20px;
-	
 	border-radius: 5px;
-	
 	background-color: #303030;
 	background-image: -webkit-linear-gradient(top,rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
-	
 	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1), inset 0px 1px 3px rgba(0,0,0,0.25), 0px 1px 1px rgba(255,255,255,0.05);
-	
 	line-height: 20px;
 }
 
@@ -175,4 +193,39 @@ input[type="radio"] + label::before {
 
 input[type="radio"]:checked + label::before {
     background:url("../img/check_radio_sheet.png") -57px top no-repeat;
+}
+
+.fakeLabel{
+  //used for select label
+  text-transform: uppercase;
+  font-family: $mainSiteFont;
+}
+fieldset{
+  ul{
+    list-style: none;
+    li{
+      
+    }
+  }
+}
+
+.radiosContainer{
+  border-top:1px solid rgba($secondFontColor,.3);
+  padding:20px;
+}
+
+textarea  {
+  background:transparent;
+  border:0px;
+  border-bottom:1px solid rgba($secondFontColor,.3);
+  color:white;
+  font-family: $mainSiteFont;
+  &:focus{
+    background:transparent;
+    border:0px;
+    border-bottom:1px solid rgba($secondFontColor,.3);
+    color:white;
+    font-family: $mainSiteFont;
+    box-shadow: none;
+  }
 }

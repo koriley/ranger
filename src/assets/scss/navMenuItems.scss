@@ -1,4 +1,4 @@
-.segmentGroup, .ownerGroup{
+.navDropColumnGroup{
   display: inline-block;
   vertical-align: top;
   width: 16.6666%;
@@ -74,12 +74,19 @@
   margin-top:55%;
 }
 
-.ownerContainer{
+.navDropColumnContainer{
   text-align:center;
-  .ownerGroup{
+  .navDropColumnGroup{
     text-align:left;
   }
 }
-.segmentGroup ul li, .ownerGroup ul li {
+.navDropColumnGroup ul li {
     text-transform: capitalize;
+}
+.newItem{
+  color:$firstAccentColor;
+  text-transform: uppercase;
+  font-family: $secondSiteFont;
+  padding:10px;
+  
 }

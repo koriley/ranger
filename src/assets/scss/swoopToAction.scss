@@ -1,70 +1,148 @@
 .swoop {
-  height:518px;
-  
-  .columns{
-    padding:0;
+  height: 518px;
+
+  .columns {
+    padding: 0;
   }
+
   .left-content {
-      padding: 50px 0 0 8vw;
+    padding: 50px 0 0 8vw;
   }
+
   .right-content {
     padding: 50px 8vw 0 0;
     text-align: right;
   }
-  hr{
+
+  hr {
     //margin:10px;
   }
-    
 
-    .right {
-        .skewMe {
-            @include skewMe(-25deg);
-            @include breakpoint(small only) {
-                 @include skewMe(0deg);
-            }
-        }
-        .clipMe{
-
-           clip-path: url("#rightClip");
-           clip-path: polygon(28.4% 0%, 100% 0%, 100% 100%, 0% 100%);
-          height:518px;
-          @include breakpoint(small only) {
-              clip-path: none;
-          }
-        }
-     }
-
-    .left {
-        h1 {
-            text-align: right;
-            @include breakpoint(small only) {
-                 text-align: left;
-            }
-        }
-
-        hr {
-            float: right;
-            @include breakpoint(small only) {
-                 float:left;
-            }
-        }
-
-
-        .skewMe {
-            @include skewMe(25deg);
-            @include breakpoint(small only) {
-                 @include skewMe(0deg);
-            }
-        }
-        .clipMe{
-            clip-path: url("#leftClip");
-           clip-path: polygon(0% 0%, 71.5% 0%, 100% 100%, 0% 100%);
-          height:518px;
-          
-          // border:1px solid red;
-          @include breakpoint(small only) {
-              clip-path: none;
-          }
-        }
+  .right {
+    .skewMe {
+      @include skewMe(-25deg);
+      @include breakpoint(small only) {
+         @include skewMe(0deg);
+      }
     }
+
+    .clipMe {
+      clip-path: url("#rightClip");
+      clip-path: polygon(28.4% 0%, 100% 0%, 100% 100%, 0% 100%);
+      height: 518px;
+      @include breakpoint(small only) {
+        clip-path: none;
+      }
+    }
+  }
+
+  .left {
+    h1 {
+      text-align: right;
+      @include breakpoint(small only) {
+        text-align: left;
+      }
+    }
+
+    hr {
+      float: right;
+      @include breakpoint(small only) {
+        float: left;
+      }
+    }
+
+    .skewMe {
+      @include skewMe(25deg);
+      @include breakpoint(small only) {
+         @include skewMe(0deg);
+      }
+    }
+
+    .clipMe {
+      clip-path: url("#leftClip");
+      clip-path: polygon(0% 0%, 71.5% 0%, 100% 100%, 0% 100%);
+      height: 518px;
+      // border:1px solid red;
+      @include breakpoint(small only) {
+        clip-path: none;
+      }
+    }
+  }
+}
+
+.swoopContainer {
+  height: 518px;
+  border: 1px solid red;
+
+  .swoopFlex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    resize: both;
+    overflow: auto;
+    height: inherit;
+  }
+}
+
+.swoopTextContainer {
+  
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  //resize: both;
+  overflow: auto;
+  height: inherit;
+  @include breakpoint(large) {
+    background: #000;
+  }
+  @include breakpoint(small) {
+    background: rgba(0,0,0,.5);
+  }
+
+  .swoopText {
+    display: inline-block;
+    text-align: left;
+    //resize: both;
+    padding: 10px;
+    border: 1px solid blue;
+    @include breakpoint(large) {
+      max-width: 800px;
+    }
+    @include breakpoint(small) {
+      width: 100%;
+    }
+  }
+}
+
+.swoopImageContainer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  //resize: both;
+  overflow: auto;
+  height: inherit;
+
+  .swoopImage {
+    display: inline-block;
+    
+    text-align: left;
+    //resize: both;
+    
+    border: 1px solid blue;
+    @include breakpoint(large) {
+      width: 800px;
+      max-width: 800px;
+      padding: 10px;
+    }
+    @include breakpoint(small) {
+    width:0px;
+    height:0px;
+    padding: 0px;
+    }
+  }
 }

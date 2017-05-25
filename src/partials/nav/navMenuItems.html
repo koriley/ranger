@@ -1,19 +1,19 @@
 <!--/* scss is navMenuItems */-->
 
-<div class="segments" style="display:none;">
+<div class="button0" style="display:none;">
 
   {{> navSegmentSelector}}
 
 </div>
 
-<div class="owners" style="display:none">
+<div class="button3" style="display:none">
 
-  <div class="ownerContainer" style="">
-
-
+  <div class="navDropColumnContainer" style="">
 
 
-        <div class="ownerGroup">
+
+
+        <div class="navDropColumnGroup">
           <h6>community</h6>
           <div class="navModel">
             <ul class="navUL">
@@ -29,7 +29,7 @@
 
 
 
-        <div class="ownerGroup">
+        <div class="navDropColumnGroup">
           <h6>Maintenance & care</h6>
           <div class="navModel">
             <ul class="navUL">
@@ -38,6 +38,8 @@
             </ul>
           </div>
         </div>
+        
+        
       </div>
 
 
@@ -55,14 +57,16 @@
     </div>
     <div class="large-9 columns">
 
-      <div class="segmentGroup">
+      <div class="navDropColumnGroup">
         <div class="navCategory">
           BASS
         </div>
         <div class="navModel">
           <ul class="navUL">
             <li class="series">Tournament</a></li>
-            <li><a href="#">RT178</a></li>
+            <!--/* This is an example of a new boat. This needs to be a property on the page that can be maked as subtext and have a text box where
+            they can enter in a word for it to say (i.e. New low price; new; updated; look here) */-->
+            <li><a href="#">RT178</a><span class="newItem">new</span></li>
             <li><a href="#">RT178C</a></li>
             <li><a href="#">RT188</a></li>
             <li><a href="#">RT188C</a></li>
@@ -71,7 +75,7 @@
         </div>
       </div>
 
-      <div class="segmentGroup">
+      <div class="navDropColumnGroup">
         <div class="navCategory">
           UTILITY
         </div>
@@ -79,7 +83,7 @@
           <ul class="navUL">
             <li class="series">mpv</a></li>
             <li><a href="#">1862cc</a></li>
-            <li><a href="#">1862</a></li>
+            <li><a href="#">1862</a><span class="newItem">updated</span></li>
             <li><a href="#">1760</a></li>
             <li class="new">1652</a></li>
           </ul>
@@ -90,7 +94,7 @@
         </div>
       </div>
 
-      <div class="segmentGroup">
+      <div class="navDropColumnGroup">
         <div class="navCategory">
           multi-species
         </div>
@@ -112,7 +116,7 @@
         </div>
       </div>
 
-      <div class="segmentGroup">
+      <div class="navDropColumnGroup">
         <div class="navCategory">
           saltwater
         </div>

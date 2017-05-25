@@ -27,6 +27,8 @@ function colorize(element) {
   return true;
 }
 
+
+
 /**********************
 resetMenu resets the vars that make the menu function when the menu state changes to all items unselected we
 need to reset everything.
@@ -179,4 +181,14 @@ jQuery('.backButton').on("touchstart click", function(e) {
 
   jQuery(".selectorDrop").children().hide();
   jQuery(".selectorDrop").find("." + selectedMenuValue).show();
+});
+
+//this is the shoping tools nav button click function
+//When clicked, it should close the main nav and reset it.
+jQuery(".shopTools").on("mouseenter", function(){
+  if (menuOpen == 1) {
+    resetMenu(".mainNav");
+    jQuery('.selectorDrop').slideFadeToggle();
+    menuOpen = 0;
+  }
 });

@@ -1,6 +1,16 @@
 .bigHeroContainer {
   height: 846px;
 }
+.smallHeroContainer{
+  
+  
+  @include breakpoint(small) {
+    height:250px;
+  }
+  @include breakpoint(large) {
+    height:350px;
+  }
+}
 
 
 // position hero text in the center of the hero image
@@ -8,9 +18,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  resize: both;
+  // resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 .heroHorizontalRightVerticalCenter {
@@ -18,9 +28,9 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
-  resize: both;
+  // resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 .heroHorizontalLeftVerticalCenter {
@@ -28,9 +38,9 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  resize: both;
+  // resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 /////////////////////
 
@@ -39,9 +49,9 @@
   display: flex;
   justify-content: center;
   //align-items: center;
-  resize: both;
+  // resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 .heroHorizontalRightVerticalTop {
@@ -49,9 +59,9 @@
   justify-content: flex-end;
   // align-items: center;
   flex-direction: row;
-  resize: both;
+  // resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 .heroHorizontalLeftVerticalTop {
@@ -59,9 +69,9 @@
   justify-content: flex-start;
   //align-items: center;
   flex-direction: row;
-  resize: both;
+  // resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 ///////////////////////
@@ -72,9 +82,9 @@
   justify-content: flex-end;
   
   flex-direction: column;
-  resize: both;
+  // resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 .heroHorizontalCenterVerticalBottom {
@@ -82,9 +92,9 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  resize: both;
+  // resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
 }
 
 .heroHorizontalRightVerticalBottom {
@@ -92,9 +102,9 @@
   justify-content: flex-end;
   
   flex-direction: row;
-  resize: both;
+  // resize: both;
   overflow: auto;
-  height: 846px;
+  height: inherit;
   .heroCopy{
     margin-top:auto;
   }
@@ -105,7 +115,7 @@
   display: inline-block;
   max-width: 800px;
   text-align: center;
-  resize: both;
+  // resize: both;
   padding: 10px;
 
   hr {
