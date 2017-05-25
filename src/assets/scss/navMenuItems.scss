@@ -1,4 +1,4 @@
-.segmentGroup, .navDropColumnGroup{
+.navDropColumnGroup{
   display: inline-block;
   vertical-align: top;
   width: 16.6666%;
@@ -80,7 +80,7 @@
     text-align:left;
   }
 }
-.segmentGroup ul li, .navDropColumnGroup ul li {
+.navDropColumnGroup ul li {
     text-transform: capitalize;
 }
 .newItem{
